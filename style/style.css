@@ -1,0 +1,50 @@
+/* || VARIABLES */
+:root{
+  
+}
+
+/* || KEYFRAMES ANIMATION */
+@keyframes typing {
+  from{
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: white;
+  }
+}
+
+/* || PRELOADER */
+.preloader{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(../assets/Black-and-White.jpg) center / cover no-repeat;
+}
+
+
+/* Preloader Text */
+.preloader__text{
+  margin-left: 2rem;
+  display: inline-block;
+  mix-blend-mode: difference;
+  color: white;
+  text-align: center;
+  font-family: monospace;
+  font-size: clamp(0.6rem, 6vw, 7vw);
+  letter-spacing: 10px;
+  line-height: normal;
+  border-right: 7px black solid;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  max-width: 58rem;
+  animation: 
+  typing 4s steps(15),
+  cursor .4s step-end infinite alternate ;
+}
+
