@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(/assets/Black-and-White.jpg) center / cover no-repeat;
+  background: url(../assets/black-and-white.jpg) center / cover no-repeat;
   z-index: 2;
 }
 
