@@ -6,8 +6,17 @@
   .preloader__container{
     margin-left: 3.3rem;
   }
-  
-  .preloader__text{
 
+  .preloader__text{
+    letter-spacing: 10px;
   }
+
+  .hero__title{
+    letter-spacing: 10px;
+  }
+
+  .content__title{
+    letter-spacing: 10px;
+  }
+
 }
