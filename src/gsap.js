@@ -2,19 +2,15 @@
 gsap.to(".preloader", {
   x: -5000,
   duration: 2,
-  delay: 7
-});
-
-// Hero Section
-gsap.to(".hero", {
-  y: -5000,
-  duration: 2,
-  delay: 12,
+  delay: 5.7
 });
 
 // Hero Title
-gsap.fromTo(".hero__title", { opacity: 0}, { opacity: 1, duration: 1, delay: 7.5});
+gsap.fromTo(".hero__title__container", { opacity: 0}, { opacity: 1, duration: 1, delay: 6});
 
-// Content Title
-gsap.fromTo(".content__title", { opacity: 0}, { opacity: 1, duration: 1, delay: 12.5});
+// Hero Button 
+gsap.fromTo(".hero__button", { opacity: 0}, { opacity: 1, duration: 1, delay: 6.9});
+
+
+
 
