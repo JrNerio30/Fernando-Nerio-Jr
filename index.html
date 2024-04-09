@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="./style/reset.css">
-    <link rel="stylesheet" type="text/css" href="./style/font.css">
     <link rel="stylesheet" type="text/css" href="./style/global.css">
+    <link rel="stylesheet" type="text/css" href="./style/keyframes.css">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="stylesheet" type="text/css" href="./style/responsive.css">
     <script src="./src/script.js" async defer></script>
@@ -18,24 +18,56 @@
     <script src="./src/gsap.js" async defer></script>
   </head>
   <body>
-    <section class="preloader" id="preloaderId">
+    <div class="cursor__ring">
+    </div>
+    <section class="preloader" id="preloaderID">
       <div class="preloader__container">
         <p class="preloader__text">Hello World.</p>
       </div>
     </section>
+
     <section class="hero" id="heroID">
-      <h1 class="hero__title">
-        My Name is<br>
-        Fernando
-      </h1>
+      <ul class="hero__title__container">
+        <li><h2 class="hero__subheader">My Name is</h2></li>
+        <li><h1 class="hero__header">Fernando Nerio Jr</h1></li>
+        <li><p class="hero__text">I'm a Web-developer based in Calgary, Alberta.</p></li>
+      </ul>
+      <div class="hero__box">
+      </div>
+      <a href="#contentID">
+        <div class="hero__button">
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
+        </div>
+      </a>
     </section>
+
     <main class="content" id="contentID">
       <div class="content__container">
         <h1 class="content__title">
-          I'm a Web-Developer
         </h1>
       </div>
     </main>
+
     <section class="projects" id="projectsID">
 
     </section>  
