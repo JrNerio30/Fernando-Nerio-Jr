@@ -22,6 +22,72 @@ body,html{
   scale: 1;
 }
 
+/* ||NAVIGATION */
+.navigation{
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 1%;
+  left: 28%;
+  z-index: 2;
+  transform: clamp(-50% -50%);
+  width: clamp(10rem, 40vw, 60vw);
+  mix-blend-mode: difference;
+  background-color: white;
+  border: 1px white solid;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Navigation Logo */
+.navigation__logo{
+  width: 100%;
+  max-width: 3rem;
+  cursor: pointer;
+}
+
+/* Navigation Container */
+.navigation__container{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Navigation Menu */
+.navigation__menu{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* Navigation Links */
+.navigation__links{
+  text-decoration: none;
+  color: white;
+  mix-blend-mode: difference;
+  position: relative;
+}
+
+/* Navigation Links Before */
+.navigation__links::before{
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  mix-blend-mode: difference;
+  background: white;
+  height: 3px;
+  width: 0%;
+  border-radius: 12px;
+  transition: all 300ms ease-in-out;
+}
+
+/* Navigation Links Hover Effect  */
+.navigation__links:hover:before{
+  width: 100%;
+}
+
 /* || PRELOADER */
 .preloader{
   overflow: hidden;
@@ -67,7 +133,6 @@ body,html{
   align-items: center;
   justify-content: center;
   background-color: white;
-
 }
 
 /* Hero Title Container */
@@ -78,21 +143,22 @@ body,html{
   gap: 1rem;
 }
 
-/* Hero Subheader */
-.hero__subheader{
-  font-family: monospace;
-  font-weight: bold;
-  font-size: clamp(1rem, 2.5vw, 3vw);
-  color: grey;
-  letter-spacing: 2px;
-}
-
 /* Hero Header */
 .hero__header{
   font-family: monospace;
   font-weight: bold;
   font-size: clamp(1rem, 4vw, 5vw);
   color: black;
+  letter-spacing: 2px;
+  margin-left: -5px;
+}
+
+/* Hero Subheader */
+.hero__subheader{
+  font-family: monospace;
+  font-weight: bold;
+  font-size: clamp(1rem, 2.5vw, 3vw);
+  color: grey;
   letter-spacing: 2px;
 }
 
