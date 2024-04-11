@@ -7,21 +7,11 @@ body,html{
 
 /* Cursor Ring */
 .cursor__ring{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: white;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  transition: all 90ms;
+  display: none;
 }
 /* Cursor Ring Active */
 .cursor__ring.active{
-  scale: 1;
+  scale: 0;
 }
 
 /* ||NAVIGATION */
@@ -112,10 +102,10 @@ body,html{
   color: white;
   text-align: center;
   font-family: "Nippo-Bold";
-  font-size: clamp(1rem, 6vw, 7vw);
-  letter-spacing: clamp(2px, 7px, 10px);
+  font-size: clamp(2rem, 6vw, 7vw);
+  letter-spacing: clamp(5px, 8px, 15px);
   line-height: normal;
-  border-right: 7px black solid;
+  border-right: 1rem black solid;
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -198,7 +188,8 @@ body,html{
   height: 20px;
   background-color: white;
   transform: rotate(-50deg);
-  animation: arrowsScrollIndicator 4s infinite linear;
+  animation-timing-function: cubic-bezier(0.32, 0.86, 0.81, 0.12);
+  animation: slider 10s infinite;
 }
 
 .hero__box__container > .hero__box--vector:nth-child(1){
