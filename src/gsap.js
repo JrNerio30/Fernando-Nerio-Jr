@@ -24,10 +24,13 @@ gsap.fromTo(
   {
     opacity: 0,
   },
-  { opacity: 1, duration: 1, delay: 6 }
+  { opacity: 1,
+    duration: 1,
+    delay: 6
+  }
 );
 
-// Hero Button
+// Hero Arrow Button
 gsap.fromTo(
   ".hero__button",
   {
@@ -40,4 +43,15 @@ gsap.fromTo(
   }
 );
 
-
+// Hero Box
+gsap.fromTo(
+  ".hero__box",
+  {
+    opacity: 0,
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    delay: 6,
+  }
+);
