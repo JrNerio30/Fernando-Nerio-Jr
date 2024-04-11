@@ -16,7 +16,7 @@ window.addEventListener('load', function() {
 });
 
 // Cursor Trail
-const cursorRing = document.querySelector(".cursor__ring")
+const cursorRing = document.getElementById("cursor__ringID");
     document.addEventListener("mousemove", (e) =>{
         requestAnimationFrame(() =>{
             cursorRing.style.left = `${e.clientX}px`;
@@ -29,5 +29,6 @@ const toggleCursor = () => {
     document.addEventListener("mousedown", toggleCursor);
     document.addEventListener("mouseup", toggleCursor);
 }
+
 
 
