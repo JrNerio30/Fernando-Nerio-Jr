@@ -32,3 +32,12 @@
     opacity: 0;
   }
 }
+
+@keyframes slider{
+  from{
+    transform: rotate(-50deg);
+  }
+  to{
+    transform: rotate(calc(-360deg * 2));
+  }
+}
