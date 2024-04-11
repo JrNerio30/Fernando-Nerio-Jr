@@ -2,7 +2,7 @@
 gsap.to(".preloader", {
   x: -5000,
   duration: 2,
-  delay: 5.7,
+  delay: 6,
 });
 
 // Navigation
@@ -14,7 +14,7 @@ gsap.fromTo(
   {
     y: 0,
     duration: 1.5,
-    delay: 5.9,
+    delay: 6,
   }
 );
 
@@ -26,7 +26,7 @@ gsap.fromTo(
   },
   { opacity: 1,
     duration: 1,
-    delay: 6
+    delay: 6.3
   }
 );
 
@@ -39,7 +39,7 @@ gsap.fromTo(
   {
     opacity: 1,
     duration: 1,
-    delay: 6.9,
+    delay: 6.5
   }
 );
 
@@ -52,6 +52,6 @@ gsap.fromTo(
   {
     opacity: 1,
     duration: 1,
-    delay: 6,
+    delay: 6.3,
   }
 );
