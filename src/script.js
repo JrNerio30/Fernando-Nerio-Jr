@@ -1,6 +1,6 @@
-// Content Title Scroll Fade-In Event
+// About Section Scroll Fade-In Event
 window.addEventListener('scroll', function() {
-  const contentTitle = document.querySelector('.content__container');
+  const contentTitle = document.querySelector('.about');
   const position = contentTitle.getBoundingClientRect();
   
   if(position.top < window.innerHeight && position.bottom >= 0){
@@ -9,6 +9,32 @@ window.addEventListener('scroll', function() {
     contentTitle.classList.remove('visible');
   }
 });
+
+// About Photo Scroll Fade-In Event
+window.addEventListener('scroll', function() {
+  const contentTitle = document.querySelector('.about__container');
+  const position = contentTitle.getBoundingClientRect();
+  
+  if(position.top < window.innerHeight && position.bottom >= 0){
+    contentTitle.classList.add('visible');
+  }else{
+    contentTitle.classList.remove('visible');
+  }
+});
+
+// About Text Container
+// About Photo Scroll Fade-In Event
+window.addEventListener('scroll', function() {
+  const contentTitle = document.querySelector('.about__text__container');
+  const position = contentTitle.getBoundingClientRect();
+  
+  if(position.top < window.innerHeight && position.bottom >= 0){
+    contentTitle.classList.add('visible');
+  }else{
+    contentTitle.classList.remove('visible');
+  }
+});
+
 
 // Scrolls Up when window is loaded
 window.addEventListener('load', function() {

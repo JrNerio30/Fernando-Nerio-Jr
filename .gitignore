@@ -3,5 +3,5 @@ package.json
 node_modules
 license
 font.md
-
+.vscode
 
