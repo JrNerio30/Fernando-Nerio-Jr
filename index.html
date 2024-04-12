@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Fernando Nerio Jr</title>
@@ -18,6 +18,8 @@
   <body>
     <div class="cursor__ring" id="cursor__ringID">
     </div>
+    <div class="noise">
+    </div>
     <section class="preloader" id="preloaderID"> 
       <div class="preloader__container">
         <h1 class="preloader__text">Hello World.</h1>
@@ -27,8 +29,8 @@
     <nav class="navigation">
       <a href="#heroID"><img class="navigation__logo" src="./assets/black-and-white-logo.png" alt="black 'FN' logo"></a>
       <ul class="navigation__container">
-        <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
         <li class="navigation__menu"><a class="navigation__links" href="#aboutID">About</a></li>
+        <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
         <li class="navigation__menu"><a class="navigation__links" href="#contactID">Contact</a></li>
       </ul>
     </nav>
@@ -37,7 +39,7 @@
       <ul class="hero__title__container">
         <li><h2 class="hero__subheader">My name is</h2></li>
         <li><h1 class="hero__header">Fernando Nerio Jr</h1></li>
-        <li><p class="hero__text">I'm a Web-developer based in Calgary, Alberta.</p></li>
+        <li><h2 class="hero__text">I'm a Web-developer based in Calgary, Alberta.</h2></li>
       </ul>
       <div class="hero__box">
         <ul class="hero__box__container">
@@ -52,7 +54,7 @@
           <li class="hero__box--vector"></li>
         </ul>
       </div>
-      <a href="#contentID">
+      <a href="#aboutID">
         <div class="hero__button">
           <span 
           class="hero__button--arrows" 
@@ -75,19 +77,63 @@
           title="Arrow Button" 
           alt="arrow pointing down">
         </span>
-        </div>
-      </a>
-    </section>
-
-    <main class="content" id="contentID">
-      <div class="content__container">
-        <h1 class="content__title">
-        </h1>
+        <p class="hero__button__text" role="link">this is just a text</p>
       </div>
-    </main>
+    </a>
+  </section>
+  
+  <section class="about" id="aboutID">
+    <ul class="about__text__container">
+      <li class="about__text--title">
+        <h2 class="about__text--header">
+          About Me
+        </h2>
+      </li>
+      <li class="about__text">
+        <p class="about__text--paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Proin vel neque a nibh semper consectetur. Proin eget nisi at turpis semper 
+          facilisis sit amet sollicitudin neque. Nunc auctor porttitor lacus, a commodo arcu. 
+          Proin vitae fringilla massa. Nam sed aliquet enim. Quisque id congue massa, 
+          a gravida odio. In diam augue, maximus eu facilisis non, laoreet eu ante. 
+          Nullam hendrerit diam lacinia tellus consequat, ac efficitur enim feugiat. 
+          Duis leo tellus, pharetra ut eros non, tempor egestas erat. Nullam eu leo pretium 
+          dui cursus mattis. Integer vel finibus arcu. Suspendisse dignissim tellus vel 
+          ullamcorper rutrum. Vivamus consectetur enim non sem pulvinar, et elementum nibh 
+          imperdiet. Etiam dignissim mollis neque eget consequat.
+        </p>
+      </li>
+      <li class="about__text">
+        <p class="about__text--paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Proin vel neque a nibh semper consectetur. Proin eget nisi at turpis semper 
+          facilisis sit amet sollicitudin neque. Nunc auctor porttitor lacus, a commodo arcu. 
+          Proin vitae fringilla massa. Nam sed aliquet enim. Quisque id congue massa, 
+          a gravida odio. In diam augue, maximus eu facilisis non, laoreet eu ante. 
+          Nullam hendrerit diam lacinia tellus consequat, ac efficitur enim feugiat. 
+          Duis leo tellus, pharetra ut eros non, tempor egestas erat. Nullam eu leo pretium 
+          dui cursus mattis. Integer vel finibus arcu. Suspendisse dignissim tellus vel 
+          ullamcorper rutrum. Vivamus consectetur enim non sem pulvinar, et elementum nibh 
+          imperdiet. Etiam dignissim mollis neque eget consequat.
+        </p>
+      </li>
+    </ul>
+    <div class="about__container">
+      <span class="about__frame"></span>
+      <span class="about__frame"></span>
+      <span class="about__frame"></span>
+      <span class="about__frame"></span>
+      <img class="about__photo" src="./assets/selfiephoto.png" alt="fernando nerio jr smilling selfie photo">
+    </div>
+  </section>
 
-    <section class="projects" id="projectsID">
+  <section class="projects" id="projectsID">
 
-    </section>  
+  </section>  
+
+
+  <section class="contact" id="contactID">
+
+  </section>
   </body>
 </html>
