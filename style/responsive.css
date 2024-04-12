@@ -38,8 +38,8 @@
     left: 50%;
     top: 50%;
     translate: -50% -50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background-color: white;
     mix-blend-mode: difference;
@@ -53,7 +53,7 @@
   .navigation{
     padding: 1rem 3rem;
     position: fixed;
-    top: 1%;
+    top: 2%;
     left: 26%;
     z-index: 2;
     transform: clamp(-50% -50%);
@@ -80,8 +80,7 @@
   }
 
   .hero__title__container{
-    margin-inline: 0;
-    margin-top: 0;
+    margin: 0 0 0 1rem;
   }
 
   .hero__text{
@@ -96,6 +95,10 @@
   }
 
   .hero__box{
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 5rem;
+  }
+
+  .about__text__container{
+    margin:0;
   }
 }
