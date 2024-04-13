@@ -42,7 +42,7 @@ window.addEventListener('load', function() {
 });
 
 // Cursor Trail
-const cursorRing = document.getElementById("cursor__ringID");
+const cursorRing = document.querySelector(".cursor__ring");
     document.addEventListener("mousemove", (e) =>{
         requestAnimationFrame(() =>{
             cursorRing.style.left = `${e.clientX}px`;
