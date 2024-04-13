@@ -29,6 +29,7 @@ body,html{
 
 /* ||NAVIGATION */
 .navigation{
+  overflow: hidden;
   padding: 1rem 3rem;
   position: fixed;
   z-index: 2;
@@ -100,7 +101,7 @@ body,html{
   align-items: center;
   flex-direction: column;
   background: linear-gradient(270deg, rgba(255,255,255,1) 51%, rgba(0,0,0,1) 51%);
-  z-index: 3;
+  z-index: 1000;
 }
 
 /* Preloader Container */
@@ -295,7 +296,7 @@ body,html{
   justify-content: center;
   gap: 6rem;
   flex-wrap: wrap;
-  transition: all 1s cubic-bezier(0, 0.35, 0.45, 0.89);
+  transition: all 1s;
 }
 
 /* Fade In from white to black transition */
@@ -306,15 +307,14 @@ body,html{
 /* Content Container */
 .about__container{
   overflow: hidden;
+  transform: translateY(5rem);
   opacity: 0;
-  transform: translateX(20rem);
-  transition: all 2s;
-}
+  transition: all 1s;
+} 
 
-/* Content Container Scroll Trigger Animation */
 .about__container.visible{
+  transform: translateY(0rem);
   opacity: 1;
-  transform: translateX(0);
 }
 
 /* About Frame */
@@ -372,6 +372,7 @@ body,html{
 
 /* About Photo */
 .about__photo{
+  overflow: hidden;
   position: relative;
   margin: 1rem;
   width: 100%;
@@ -388,16 +389,17 @@ body,html{
   flex-basis: 500px;
   mix-blend-mode: difference;
   color: white;
-  opacity: 0;
-  transform: translateX(-20rem);
-  transition: all 1s;
   margin: 5rem 2rem 0 2rem;
+  transform: translateY(5rem);
+  opacity: 0;
+  transition: all 1s;
 }
 
 .about__text__container.visible{
   opacity: 1;
-  transform: translateX(0);
+  transform: translateY(0);
 }
+
 
 
 .about__text--header{
