@@ -70,14 +70,36 @@
     left: 50%;
     top: 50%;
     translate: -50% -50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: white;
+    border: 2px white solid;
+    background-color: transparent;
     mix-blend-mode: difference;
     pointer-events: none;
-    transition: all 90ms;
   }
+
+  .cursor__ring > .cursor__ring__middle:nth-child(1){
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    transform: translate(-50% -50%);
+    width: 10px;
+    height: 2px;
+  }
+
+  .cursor__ring > .cursor__ring__middle:nth-child(2){
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50% -50%);
+    width: 2px;
+    height: 10px;
+  }
+
+  
   .cursor__ring.active{
     scale: 1;
   }
