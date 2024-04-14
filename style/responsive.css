@@ -122,7 +122,7 @@
     white-space: nowrap;
     width: 100%;
     animation: 
-    typing 4s steps(46) 6s infinite alternate,
+    typing 4s steps(46) 2.8s infinite alternate,
     cursor .4s step-end infinite alternate;
   }
 
