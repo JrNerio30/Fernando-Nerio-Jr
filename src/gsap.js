@@ -35,8 +35,10 @@ gsap.fromTo(
   ".hero__button",
   {
     opacity: 0,
+    y: -20
   },
   {
+    y:0,
     opacity: 1,
     duration: 1,
     delay: 3.5
