@@ -137,7 +137,7 @@ body,html{
 
 /* || HERO */
 .hero{
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -147,7 +147,7 @@ body,html{
 
 /* Hero Title Container */
 .hero__title__container{
-  margin-top: 6rem;
+  margin-block: 6rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -211,46 +211,8 @@ body,html{
   animation: slider 10s cubic-bezier(0.32, 0.86, 0.81, 0.12) 2.8s infinite;
 }
 
-/* Hero Button */
 .hero__button{
-  position: absolute;
-  bottom: 5%;
-  right: 50%;
-  transform: translate(-50% -50%);
-  cursor: pointer;
-}
-
-/* Hero Scroll Arrows */
-.hero__button--arrows{
-  mix-blend-mode: difference;
-  display: block;
-  width: 20px;
-  height: 20px;
-  border-bottom: 1.5px solid white;
-  border-right: 1.5px solid white;
-  transform: rotate(45deg);
-  margin: -8px;
-  animation: arrowsScrollIndicator 1s infinite linear;
-}
-
-/* Hero Button Text Link */
-.hero__button__text{
   display: none;
-}
-
-/* Hero Scroll Arrow Span 1 */
-.hero__button > .hero__button--arrows:nth-child(1){
-  animation-delay: 0.2s;
-}
-
-/* Hero Scroll Arrow Span 2 */
-.hero__button > .hero__button--arrows:nth-child(2){
-  animation-delay: 0.3s;
-}
-
-/* Hero Scroll Arrow Span 3 */
-.hero__button > .hero__button--arrows:nth-child(3){
-  animation-delay: 0.4s;
 }
 
 /* || CONTENT */
@@ -272,25 +234,26 @@ body,html{
 }
 
 /* Content Container */
-.about__container{
+.about__photo__container{
   overflow: hidden;
   transform: translateY(5rem);
   opacity: 0;
+  margin: 1rem;
   transition: all 1s;
 } 
 
-.about__container.visible{
+.about__photo__container.visible{
   transform: translateY(0rem);
   opacity: 1;
 }
 
 /* About Frame */
-.about__container > .about__frame{
+.about__photo__container > .about__frame{
   z-index: 1;
 }
 
 /* About Frame Child 1*/
-.about__container > .about__frame:nth-child(1){
+.about__photo__container > .about__frame:nth-child(1){
   position: absolute;
   top: 5px;
   left: 78%;
@@ -303,7 +266,7 @@ body,html{
 }
 
 /* About Frame Child 2*/
-.about__container > .about__frame:nth-child(2){
+.about__photo__container > .about__frame:nth-child(2){
   position: absolute;
   top: 5px;
   left: 99%;
@@ -315,10 +278,10 @@ body,html{
 }
 
 /* About Frame Child 3*/
-.about__container > .about__frame:nth-child(3){
+.about__photo__container > .about__frame:nth-child(3){
   position: absolute;
-  top: 95.5%;
-  left: 24%;
+  top: 95.7%;
+  left: 22.4%;
   transform: translateX(-50%);
   background: white;
   height: 5px;
@@ -326,10 +289,10 @@ body,html{
 }
 
 /* About Frame Child 4*/
-.about__container > .about__frame:nth-child(4){
+.about__photo__container > .about__frame:nth-child(4){
   position: absolute;
   top: 36.5%;
-  left: 5%;
+  left: 4%;
   transform: translateX(-50%);
   mix-blend-mode: hard-light;
   background: white;
@@ -340,11 +303,11 @@ body,html{
 /* About Photo */
 .about__photo{
   overflow: hidden;
-  position: relative;
   margin: 1rem;
   width: 100%;
   max-width: 20rem;
   height: auto;
+  z-index: 1;
 }
 
 /* Content Title */
@@ -377,6 +340,7 @@ body,html{
 .about__text--paragraph{
   font-family: monospace;
   font-size: clamp(10px, 15px, 15px);
+  line-height: 120%;
 }
 
 /* || PROJECTS */
