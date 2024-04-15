@@ -30,7 +30,7 @@
   }
 
   /* Content Container */
-  .about__container{
+  .about__photo__container{
     overflow: hidden;
     opacity: 0;
     transform: translateX(5rem);
@@ -38,7 +38,7 @@
   }
 
   /* Content Container Scroll Trigger Animation */
-  .about__container.visible{
+  .about__photo__container.visible{
     opacity: 1;
     transform: translateX(0);
   }
@@ -145,7 +145,7 @@
     white-space: nowrap;
     width: 100%;
     animation: 
-    typing 4s steps(46) 2.8s infinite alternate,
+    typing 3s steps(46) 2.8s infinite alternate,
     cursor .4s step-end infinite alternate;
   }
 
@@ -153,30 +153,73 @@
     margin: 0 0 0 5rem;
   }
 
-/* Content Container */
-.about__container{
-  overflow: hidden;
-  opacity: 0;
-  transform: translateX(8rem);
-  transition: all 2s;
-}
+    /* Hero Button */
+  .hero__button{
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
+  }
 
-/* Content Container Scroll Trigger Animation */
-.about__container.visible{
-  opacity: 1;
-  transform: translateX(0);
-}
+  /* Hero Scroll Arrows */
+  .hero__button--arrows{
+    /* mix-blend-mode: difference; */
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1.5px solid black;
+    border-right: 1.5px solid black;
+    transform: rotate(45deg);
+    margin: -8px;
+    animation: arrowsScrollIndicator 1s infinite linear;
+  }
 
-.about__text__container{
-  transform: translateX(-8rem);
-  opacity: 0;
-  margin:0;
-  transition: all 2s;
-}
+  /* Hero Button Text Link */
+  .hero__button__text{
+    display: none;
+  }
 
-.about__text__container.visible{
-  opacity: 1;
-  transform: translateX(0);
-}
+  /* Hero Scroll Arrow Span 1 */
+  .hero__button > .hero__button--arrows:nth-child(1){
+    animation-delay: 0.2s;
+  }
+
+  /* Hero Scroll Arrow Span 2 */
+  .hero__button > .hero__button--arrows:nth-child(2){
+    animation-delay: 0.3s;
+  }
+
+  /* Hero Scroll Arrow Span 3 */
+  .hero__button > .hero__button--arrows:nth-child(3){
+    animation-delay: 0.4s;
+  }
+
+  /* Content Container */
+  .about__photo__container{
+    overflow: hidden;
+    opacity: 0;
+    transform: translateX(8rem);
+    transition: all 1s;
+  }
+
+  /* Content Container Scroll Trigger Animation */
+  .about__photo__container.visible{
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .about__text__container{
+    transform: translateX(-8rem);
+    opacity: 0;
+    margin:0;
+    transition: all 1s;
+  }
+
+  .about__text__container.visible{
+    opacity: 1;
+    transform: translateX(0);
+  }
 
 }
