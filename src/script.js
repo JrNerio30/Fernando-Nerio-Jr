@@ -12,7 +12,7 @@ window.addEventListener("scroll", function () {
 
 // About Photo Scroll Fade-In Event
 window.addEventListener("scroll", function () {
-  const contentTitle = document.querySelector(".about__container");
+  const contentTitle = document.querySelector(".about__photo__container");
   const position = contentTitle.getBoundingClientRect();
 
   if (position.top < window.innerHeight && position.bottom >= 0) {
