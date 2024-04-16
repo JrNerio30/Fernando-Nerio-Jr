@@ -58,3 +58,8 @@
 <!-- Arrow Symbol -->
 ### Arrow Symbol
 * https://symbolsdb.com/arrow-symbol
+
+<!-- Real Time Calgary -->
+### Real Time Calgary
+* Used Chat-GPT for code clarifaction
+* IDEA: https://www.leedave.com/ (Hero Page where it says "Based in Seattle")
