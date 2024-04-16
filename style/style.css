@@ -253,6 +253,7 @@ body,html{
 .about__photo__container.visible{
   transform: translateY(0rem);
   opacity: 1;
+  position: relative;
 }
 
 /* About Frame */
@@ -300,7 +301,7 @@ body,html{
 .about__photo__container > .about__frame:nth-child(4){
   position: absolute;
   top: 36.5%;
-  left: 4%;
+  left: 4.3%;
   transform: translateX(-50%);
   mix-blend-mode: hard-light;
   background: white;
@@ -316,6 +317,7 @@ body,html{
   max-width: 15rem;
   height: auto;
   z-index: 1;
+  color: white;
 }
 
 /* Content Title */
