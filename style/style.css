@@ -183,6 +183,14 @@ body,html{
   animation: none;
 }
 
+/* Hero Time */
+.hero__time{
+  color: black;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 /* Hero Box */
 .hero__box{
   overflow: hidden;
