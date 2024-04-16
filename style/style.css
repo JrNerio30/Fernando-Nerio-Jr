@@ -223,7 +223,6 @@ body,html{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6rem;
   flex-wrap: wrap;
   transition: all 1s;
 }
@@ -312,7 +311,6 @@ body,html{
 
 /* Content Title */
 .about__text__container{ 
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 1rem; 
@@ -325,22 +323,50 @@ body,html{
   transition: all 1s;
 }
 
+/* About Text Container When It's Visible */
 .about__text__container.visible{
   opacity: 1;
   transform: translateY(0);
 }
 
-
-
+/* About Text Header */
 .about__text--header{
   font-family: "Nippo-medium";
   font-size: clamp(1rem, 3rem, 5rem);
 }
 
+/* About Text Paragraph */
 .about__text--paragraph{
   font-family: monospace;
   font-size: clamp(10px, 15px, 15px);
   line-height: 120%;
+}
+
+/* About Button Container */
+.about__button__container{
+  margin-block: 1rem 3rem;
+}
+
+/* About Button */
+.about__button{
+  position: relative;
+  font-family: "Nippo-Medium";
+  text-decoration: none;
+  color: black;
+  padding: 2px 10px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* About Button Arrow Symbol */
+.about__button--arrow{
+  display: none;
+  color: black;
+}
+
+/* About Button Arrow MouseEnters event */
+.about__button--arrow.active{
+  display: inline-block;
 }
 
 /* || PROJECTS */
