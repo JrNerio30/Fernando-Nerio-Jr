@@ -71,4 +71,15 @@ heroBoxVectors.forEach((box, index) =>{
   box.style.animationDelay = `${0.2 + index * 0.1}s`;
 });
 
+// About Button Hover
+const aboutButton = document.getElementById("about__button--ID");
+const aboutButtonArrow = document.querySelector(".about__button--arrow");
+aboutButton.addEventListener("mouseenter", function(){
+  aboutButtonArrow.classList.add("active");
+});
+aboutButton.addEventListener("mouseleave", function(){
+  aboutButtonArrow.classList.remove("active");
+});
+
+
 
