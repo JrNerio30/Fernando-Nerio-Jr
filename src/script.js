@@ -81,5 +81,37 @@ aboutButton.addEventListener("mouseleave", function(){
   aboutButtonArrow.classList.remove("active");
 });
 
+// Function to get current time in Calgary
+function getCurrentTimeInCalgary() {
+  // Create a new Date object
+  const currentTime = new Date();
+  
+  // Set the time zone to Mountain Time (Calgary's time zone)
+  const options = { timeZone: 'America/Edmonton' };
+  
+  // Format the date and time
+  const formattedTime = currentTime.toLocaleString('en-US', options);
+  
+  return formattedTime;
+}
+
+// Function to update the time every second
+function updateTime() {
+  // Get the element where you want to display the time
+  const timeElement = document.querySelector(".hero__time");
+  
+  // Update the time every second
+  setInterval(function() {
+    const calgaryTime = getCurrentTimeInCalgary();
+    timeElement.textContent = calgaryTime;
+  }, 1000);
+}
+
+// Call the updateTime function when the page loads
+window.onload = updateTime;
+
+
+
+
 
 
