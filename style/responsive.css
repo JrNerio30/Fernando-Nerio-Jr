@@ -222,4 +222,9 @@
     transform: translateX(0);
   }
 
+    /* About Button Container */
+  .about__button__container{
+    margin-block: 1rem;
+  }
+
 }
