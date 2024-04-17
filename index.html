@@ -6,7 +6,7 @@
     <title>Fernando Nerio Jr</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
     <link rel="stylesheet" type="text/css" href="./style/reset.css">
     <link rel="stylesheet" type="text/css" href="./style/keyframes.css">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
@@ -26,20 +26,24 @@
     </section>
 
     <nav class="navigation">
-      <a href="#heroID"><img class="navigation__logo" src="./assets/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
+      <a href="#heroID"><img class="navigation__logo" role="link" src="./assets/icons/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
       <ul class="navigation__container">
-        <li class="navigation__menu"><a class="navigation__links" href="#aboutID">About</a></li>
-        <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
-        <li class="navigation__menu"><a class="navigation__links" href="#contactID">Contact</a></li>
+        <li class="navigation__menu"><a class="navigation__links" role="link" href="#aboutID">About</a></li>
+        <li class="navigation__menu"><a class="navigation__links" role="link" href="#projectsID">Projects</a></li>
+        <li class="navigation__menu"><a class="navigation__links" role="link" href="#footerID">Contact</a></li>
       </ul>
     </nav>
 
-    <section class="hero" id="heroID">
+    <header class="hero" id="heroID">
       <ul class="hero__title__container">
         <li><h2 class="hero__subheader">My name is</h2></li>
-        <li><h1 class="hero__header">Fernando Nerio Jr</h1></li>
-        <li><h2 class="hero__text">I'm a Web-developer based in Calgary, Alberta.</h2></li>
-        <li><h3 class="hero__time"></h3></li>
+        <li><h2 class="hero__header">Fernando Nerio Jr</h2></li>
+        <li><div class="hero__text__inline"><h3 class="hero__text">I'm a Web-developer.</h3></div></li>
+        <li>
+          <time>
+            <h4 class="hero__time"></h4>
+          </time>
+        </li>
       </ul>
       <div class="hero__box">
         <ul class="hero__box__container">
@@ -53,7 +57,7 @@
         <p class="hero__button__text" role="link">this is just a text</p>
       </div>
     </a>
-  </section>
+  </header>
   
   <section class="about" id="aboutID">
     <ul class="about__text__container" id="text__containerID">
@@ -82,7 +86,7 @@
       </li>
       <li class="about__text">
         <div class="about__button__container">
-          <a class="about__button" id="about__button--ID" href="./aboutme.html">Learn More <span class="about__button--arrow">🡵</span></a>
+          <a class="about__button" role="link" id="about__button--ID" href="./aboutme.html">Learn More <span class="about__button--arrow">🡵</span></a>
         </div>
       </li>
     </ul>
@@ -91,18 +95,29 @@
       <span class="about__frame"></span>
       <span class="about__frame"></span>
       <span class="about__frame"></span>
-      <img class="about__photo" src="./assets/selfiephoto.png" alt="fernando nerio jr smilling selfie photo" width="320" height="511">
+      <img class="about__photo" src="./assets/photos/selfiephoto.png" alt="fernando nerio jr smilling selfie photo" width="320" height="511">
     </div>
   </section>
-<!-- 
-  <section class="projects" id="projectsID">
 
-  </section>  
+  <aside class="skills" id="skillsID">
+    <ul class="skills__container">
+      <li class="skills__items"><img class="skills__icons" src="./assets/icons/htmlicon.png" alt="html logo black"></li>
+      <li class="skills__items"><img class="skills__icons" src="./assets/icons/cssicon.png" alt="css logo black"></li>
+      <li class="skills__items"><img class="skills__icons" src="./assets/icons/javascripticon.png" alt="javascript logo black"></li>
+      <li class="skills__items"><img class="skills__icons" src="./assets/icons/sassicon.png" alt="sass logo black"></li>
+    </ul>
+  </aside>
 
+  <main class="projects" id="projectsID">
+    <h2 class="projects__title">
+      Projects
+    </h2>
+  </main>  
 
-  <section class="contact" id="contactID">
+  <footer class="footer" id="footerID">
+    <h2 class="footer__title">Footer</h2>
+  </footer>
 
-  </section> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
   <script src="./src/gsap.js" defer></script>
   <script src="./src/script.js" defer></script>
