@@ -43,6 +43,10 @@
     transform: translateX(0);
   }
 
+  .about__photo{
+    max-width: 15rem;
+  }
+
   .about__text__container{
     transform: translateX(-20rem);
     opacity: 0;
@@ -77,7 +81,7 @@
     background-color: transparent;
     mix-blend-mode: difference;
     pointer-events: none;
-    z-index: 1;
+    z-index: 3;
   }
 
   .cursor__ring > .cursor__ring__middle:nth-child(1){
@@ -145,7 +149,7 @@
     white-space: nowrap;
     width: 100%;
     animation: 
-    typing 3s steps(46) 2.8s infinite alternate,
+    typing 3s steps(20) 2.8s infinite alternate,
     cursor .4s step-end infinite alternate;
   }
 
@@ -208,6 +212,10 @@
   .about__photo__container.visible{
     opacity: 1;
     transform: translateX(0);
+  }
+
+  .about__photo{
+    max-width: 15rem;
   }
 
   .about__text__container{
