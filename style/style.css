@@ -31,7 +31,7 @@ body,html{
   opacity: 0.05;
   z-index: 2;
   pointer-events: none;
-  background: url(../assets/noise.gif);
+  background: url(../assets/gif/noise.gif);
 }
 
 /* ||NAVIGATION */
@@ -173,6 +173,10 @@ body,html{
   letter-spacing: 5px;
 }
 
+.hero__text__inline{
+  display: inline-block;
+}
+
 /* Hero text */
 .hero__text{
   font-size: clamp(0.75rem, 1.3rem, 1.75rem);
@@ -182,6 +186,7 @@ body,html{
   letter-spacing: 2px;
   animation: none;
 }
+
 
 /* Hero Time */
 .hero__time{
@@ -204,12 +209,14 @@ body,html{
   justify-content: center;
 }
 
+/* Hero Box Container */
 .hero__box__container{
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
+/* Hero Box Vector */
 .hero__box--vector{
   overflow: hidden;
   mix-blend-mode: difference;
@@ -219,6 +226,7 @@ body,html{
   animation: slider 10s cubic-bezier(0.32, 0.86, 0.81, 0.12) 2.8s infinite;
 }
 
+/* Hero Button */
 .hero__button{
   display: none;
 }
@@ -226,19 +234,14 @@ body,html{
 /* || CONTENT */
 .about{
   width: 100%;
-  min-height: 100vh;
-  background-color: white;
+  min-height: 80vh;
+  background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 3rem;
   transition: all 2s;
-}
-
-/* Fade In from white to black transition */
-.about.visible{
-  background-color: black;
 }
 
 /* Content Container */
@@ -246,10 +249,11 @@ body,html{
   overflow: hidden;
   transform: translateY(5rem);
   opacity: 0;
-  margin: 1rem;
   transition: all 1s;
+  margin: 1rem 1rem 5rem 1rem;
 } 
 
+/* About Photo Container when Visible */
 .about__photo__container.visible{
   transform: translateY(0rem);
   opacity: 1;
@@ -314,10 +318,11 @@ body,html{
   overflow: hidden;
   margin: 1rem;
   width: 100%;
-  max-width: 15rem;
+  max-width: 20rem;
   height: auto;
   z-index: 1;
   color: white;
+
 }
 
 /* Content Title */
@@ -355,7 +360,7 @@ body,html{
 
 /* About Button Container */
 .about__button__container{
-  margin-block: 1rem 3rem;
+  margin-block: 1rem 2rem;
 }
 
 /* About Button */
@@ -380,8 +385,59 @@ body,html{
   display: inline-block;
 }
 
+/* ||SKILLS */
+.skills{
+  height: 15vh;
+  background-color: white;
+}
+
+/* Skills Container */
+.skills__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skills Items */
+.skills__items{
+  margin-top: 3rem;
+  text-align: center;
+  flex-basis: 170px;
+  transform: rotateY(0);
+  transition: all 0.5s;
+}
+
+.skills__items.visible{
+  transform: rotateY(360deg);
+}
+
+
 /* || PROJECTS */
 .projects{
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Project Title */
+.projects__title{
+  font-family: "Nippo-Medium";
+  color: white;
+  font-size: clamp(1rem, 3rem, 5rem);
+}
+
+/* || FOOTER */
+.footer{
+  min-height: 30vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__title{
+  font-family: "Nippo-Medium";
+  font-size: clamp(1rem, 3rem, 5rem);
 }
 
