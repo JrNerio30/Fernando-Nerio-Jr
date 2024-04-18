@@ -63,3 +63,14 @@
 ### Real Time Calgary
 * Used Chat-GPT for code clarifaction
 * IDEA: https://www.leedave.com/ (Hero Page where it says "Based in Seattle")
+
+<!-- ICONS -->
+## Icons
+### HTML
+* https://icons8.com/icon/23028/html-5
+### CSS
+* https://icons8.com/icon/38272/css3 
+### JavaScript
+* https://icons8.com/icon/39854/javascript
+### SASS
+* https://icons8.com/icon/H997wGMPVphe/sass 
