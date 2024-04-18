@@ -1,37 +1,30 @@
-// About Section Scroll Fade-In Event
+// About Text Scroll Fade-In Event
 window.addEventListener("scroll", function () {
-  const contentTitle = document.querySelector(".about");
-  const position = contentTitle.getBoundingClientRect();
+  const contentText = document.querySelector(".about__text__container");
+  const contentTextPosition = contentText.getBoundingClientRect();
 
-  if (position.top < window.innerHeight && position.bottom >= 0) {
-    contentTitle.classList.add("visible");
+  if (
+    contentTextPosition.top < window.innerHeight &&
+    contentTextPosition.bottom >= 0
+  ) {
+    contentText.classList.add("visible");
   } else {
-    contentTitle.classList.remove("visible");
+    contentText.classList.remove("visible");
   }
 });
 
 // About Photo Scroll Fade-In Event
 window.addEventListener("scroll", function () {
-  const contentTitle = document.getElementById("photo__containerID");
-  const position = contentTitle.getBoundingClientRect();
+  const contentPhoto = document.querySelector(".about__photo__container");
+  const contentPhotoPosition = contentPhoto.getBoundingClientRect();
 
-  if (position.top < window.innerHeight && position.bottom >= 0) {
-    contentTitle.classList.add("visible");
+  if (
+    contentPhotoPosition.top < window.innerHeight &&
+    contentPhotoPosition.bottom >= 0
+  ) {
+    contentPhoto.classList.add("visible");
   } else {
-    contentTitle.classList.remove("visible");
-  }
-});
-
-// About Text Container
-// About Photo Scroll Fade-In Event
-window.addEventListener("scroll", function () {
-  const contentTitle = document.getElementById("text__containerID");
-  const position = contentTitle.getBoundingClientRect();
-
-  if (position.top < window.innerHeight && position.bottom >= 0) {
-    contentTitle.classList.add("visible");
-  } else {
-    contentTitle.classList.remove("visible");
+    contentPhoto.classList.remove("visible");
   }
 });
 
@@ -48,6 +41,35 @@ window.addEventListener("scroll", function () {
       skillsItems.classList.add("visible");
     } else {
       skillsItems.classList.remove("visible");
+    }
+  });
+});
+
+// Projects Title Container
+window.addEventListener("scroll", function () {
+  const projectstitle = document.querySelector(".projects__header__container");
+  const projectstitlePosition = projectstitle.getBoundingClientRect();
+
+  if (
+    projectstitlePosition.top < window.innerHeight &&
+    projectstitlePosition.bottom >= 0
+  ) {
+    projectstitle.classList.add("visible");
+  } else {
+    projectstitle.classList.remove("visible");
+  }
+});
+
+// Projects Items
+window.addEventListener("scroll", function() {
+  const projectItemsList = document.querySelectorAll(".projects__items");
+  projectItemsList.forEach(function(projectItems) {
+    const projectItemsPosition = projectItems.getBoundingClientRect();
+
+    if(projectItemsPosition.top < window.innerHeight && projectItemsPosition.bottom >= 0){
+      projectItems.classList.add("visible");
+    }else{
+      projectItems.classList.remove("visible");
     }
   });
 });
