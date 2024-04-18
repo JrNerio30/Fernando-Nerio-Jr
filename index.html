@@ -6,16 +6,18 @@
     <title>Fernando Nerio Jr</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
     <link rel="stylesheet" type="text/css" href="./style/reset.css">
     <link rel="stylesheet" type="text/css" href="./style/keyframes.css">
     <link rel="stylesheet" type="text/css" href="./style/style.css">
     <link rel="stylesheet" type="text/css" href="./style/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+    <script src="./src/gsap.js" async defer></script>
+    <script src="./src/script.js" async defer></script>
   </head>
   <body>
-    <div class="cursor__ring" id="cursor__ringID1">
-      <div class="cursor__ring__middle"></div>
-      <div class="cursor__ring__middle"></div>
+    <div class="cursor__ring" id="cursor__ringID">
     </div>
     <div class="noise">
     </div>
@@ -26,37 +28,63 @@
     </section>
 
     <nav class="navigation">
-      <a href="#heroID"><img class="navigation__logo" src="./assets/icons/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
+      <a href="#heroID"><img class="navigation__logo" src="./assets/black-and-white-logo.png" alt="black 'FN' logo"></a>
       <ul class="navigation__container">
         <li class="navigation__menu"><a class="navigation__links" href="#aboutID">About</a></li>
         <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
-        <li class="navigation__menu"><a class="navigation__links" href="#footerID">Contact</a></li>
+        <li class="navigation__menu"><a class="navigation__links" href="#contactID">Contact</a></li>
       </ul>
     </nav>
 
-    <header class="hero" id="heroID">
+    <section class="hero" id="heroID">
       <ul class="hero__title__container">
         <li><h2 class="hero__subheader">My name is</h2></li>
-        <li><h2 class="hero__header">Fernando Nerio Jr</h2></li>
-        <li><div class="hero__text__inline"><h3 class="hero__text">I'm a Web-developer.</h3></div></li>
-        <li><h4 class="hero__time"></h4></li>
+        <li><h1 class="hero__header">Fernando Nerio Jr</h1></li>
+        <li><h2 class="hero__text">I'm a Web-developer based in Calgary, Alberta.</h2></li>
       </ul>
       <div class="hero__box">
         <ul class="hero__box__container">
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
+          <li class="hero__box--vector"></li>
         </ul>
       </div>
       <a href="#aboutID">
         <div class="hero__button">
-          <span class="hero__button--arrows" title="Arrow Button"></span>
-          <span class="hero__button--arrows" title="Arrow Button"></span>
-          <span class="hero__button--arrows" title="Arrow Button"></span>
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
+          <span 
+          class="hero__button--arrows" 
+          name="arrow-downward-outline" 
+          role="button" 
+          title="Arrow Button" 
+          alt="arrow pointing down">
+        </span>
         <p class="hero__button__text" role="link">this is just a text</p>
       </div>
     </a>
-  </header>
+  </section>
   
   <section class="about" id="aboutID">
-    <ul class="about__text__container" id="text__containerID">
+    <ul class="about__text__container">
       <li class="about__text--title">
         <h2 class="about__text--header">
           About Me
@@ -64,132 +92,40 @@
       </li>
       <li class="about__text">
         <p class="about__text--paragraph">
-          I'm Fernando Nerio Jr, a dedicated student with a passion for web design and development. 
-          Through my coursework and extracurricular activities, I've honed my skills in coding 
-          languages like HTML, CSS, and JavaScript, and I'm eager to apply them to real-world projects. 
-          Whether it's designing intuitive user interfaces or delving into back-end development, 
-          I thrive on the challenge of creating dynamic and visually appealing websites.
+          Hello, I'm Fernando. I'm currently a majoring 
         </p>
       </li>
       <li class="about__text">
         <p class="about__text--paragraph">
-          Outside of classes, I enjoy exploring new design trends and experimenting with 
-          different coding techniques to expand my skill set. I'm always seeking opportunities 
-          to learn and grow, whether through internships, workshops, or personal projects. 
-          With a drive for excellence and a love for innovation, I'm excited to embark on 
-          this journey in web design and development.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Proin vel neque a nibh semper consectetur. Proin eget nisi at turpis semper 
+          facilisis sit amet sollicitudin neque. Nunc auctor porttitor lacus, a commodo arcu. 
+          Proin vitae fringilla massa. Nam sed aliquet enim. Quisque id congue massa, 
+          a gravida odio. In diam augue, maximus eu facilisis non, laoreet eu ante. 
+          Nullam hendrerit diam lacinia tellus consequat, ac efficitur enim feugiat. 
+          Duis leo tellus, pharetra ut eros non, tempor egestas erat. Nullam eu leo pretium 
+          dui cursus mattis. Integer vel finibus arcu. Suspendisse dignissim tellus vel 
+          ullamcorper rutrum. Vivamus consectetur enim non sem pulvinar, et elementum nibh 
+          imperdiet. Etiam dignissim mollis neque eget consequat.
         </p>
       </li>
-      <li class="about__text">
-        <div class="about__button__container">
-          <a class="about__button" role="link" id="about__button--ID" href="./aboutme.html">Learn More <span class="about__button--arrow">🡵</span></a>
-        </div>
-      </li>
     </ul>
-    <div class="about__photo__container" id="photo__containerID">
+    <div class="about__container">
       <span class="about__frame"></span>
       <span class="about__frame"></span>
       <span class="about__frame"></span>
       <span class="about__frame"></span>
-      <img class="about__photo" src="./assets/photos/selfiephoto.png" alt="fernando nerio jr smilling selfie photo" width="320" height="511">
+      <img class="about__photo" src="./assets/selfiephoto.png" alt="fernando nerio jr smilling selfie photo">
     </div>
   </section>
 
-  <aside class="skills" id="skillsID">
-    <ul class="skills__container">
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/htmlicon.png" alt="html logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/cssicon.png" alt="css logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/javascripticon.png" alt="javascript logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/sassicon.png" alt="sass logo black"></li>
-    </ul>
-  </aside>
+  <section class="projects" id="projectsID">
 
-  <main class="projects" id="projectsID">
-    <div class="projects__header__container">
-      <div class="projects__triangle--left"></div>
-      <h2 class="projects__header">
-        Projects
-      </h2>
-      <div class="projects__triangle--right"></div>
-    </div>
-    <ul class="projects__container">
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/portfolio.png" alt="Hello World Fernando's Portfolio">
-        <h2 class="projects__title">Portfolio</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Portfolio/" class="projects__button" role="link" target="_blank">View</a>
-      </li>
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/urbanzenith.png" alt="UrbanZenith Website with mirror and chairs">
-        <h2 class="projects__title">UrbanZenith</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/UrbanZenith-Designs/" class="projects__button" role="link" target="_blank">View</a>
-      </li>
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/welcometohawaii.png" alt="Welcome to hawaii website">
-        <h2 class="projects__title">Welcome To Hawaii</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Welcome_To_Hawaii/" class="projects__button" role="link" target="_blank">View</a>
-      </li>
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/pokemonweb.png" alt="Pokemon website for johto region">
-        <h2 class="projects__title">Pokemon Johto</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Pokemon-Web/" class="projects__button" role="link" target="_blank">View</a>
-      </li>
-    </ul>
-  </main>  
+  </section>  
 
-  <footer class="footer" id="footerID">
-    <div class="footer__title__container">
-      <h2 class="footer__title">
-        Footer
-      </h2>
-    </div>
-  </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="./src/gsap.js" defer></script>
-  <script src="./src/script.js" defer></script>
+  <section class="contact" id="contactID">
+
+  </section>
   </body>
 </html>
