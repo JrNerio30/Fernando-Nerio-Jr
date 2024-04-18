@@ -7,6 +7,17 @@ document.addEventListener("mousemove", function (e) {
   });
 });
 
+// Preloader Overlay Childer(Bars)
+const preloaderOverlay = document.querySelector(".about__preloader__overlay");
+
+for(i = 0; i <= 7; i++){
+  const preloaderBars = document.createElement("li");
+
+  preloaderOverlay.appendChild(preloaderBars);
+
+  preloaderBars.classList.add("about__preloader__bars")
+}
+
 // Toggle "active" class name when -->
 const toggleCursor = function () {
   cursorRing.classList.toggle("active");

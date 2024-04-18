@@ -26,11 +26,11 @@
     </section>
 
     <nav class="navigation">
-      <a href="#heroID"><img class="navigation__logo" role="link" src="./assets/icons/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
+      <a href="#heroID"><img class="navigation__logo" src="./assets/icons/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
       <ul class="navigation__container">
-        <li class="navigation__menu"><a class="navigation__links" role="link" href="#aboutID">About</a></li>
-        <li class="navigation__menu"><a class="navigation__links" role="link" href="#projectsID">Projects</a></li>
-        <li class="navigation__menu"><a class="navigation__links" role="link" href="#footerID">Contact</a></li>
+        <li class="navigation__menu"><a class="navigation__links" href="#aboutID">About</a></li>
+        <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
+        <li class="navigation__menu"><a class="navigation__links" href="#footerID">Contact</a></li>
       </ul>
     </nav>
 
@@ -39,11 +39,7 @@
         <li><h2 class="hero__subheader">My name is</h2></li>
         <li><h2 class="hero__header">Fernando Nerio Jr</h2></li>
         <li><div class="hero__text__inline"><h3 class="hero__text">I'm a Web-developer.</h3></div></li>
-        <li>
-          <time>
-            <h4 class="hero__time"></h4>
-          </time>
-        </li>
+        <li><h4 class="hero__time"></h4></li>
       </ul>
       <div class="hero__box">
         <ul class="hero__box__container">
@@ -109,13 +105,87 @@
   </aside>
 
   <main class="projects" id="projectsID">
-    <h2 class="projects__title">
-      Projects
-    </h2>
+    <div class="projects__header__container">
+      <div class="projects__triangle--left"></div>
+      <h2 class="projects__header">
+        Projects
+      </h2>
+      <div class="projects__triangle--right"></div>
+    </div>
+    <ul class="projects__container">
+      <li class="projects__items">
+        <img class="projects__image" src="./assets/photos/portfolio.png" alt="Hello World Fernando's Portfolio">
+        <h2 class="projects__title">Portfolio</h2>
+        <p class="projects__program">
+          <span class="projects__program--span">HTML</span>
+          <span class="projects__program--span">CSS</span>
+          <span class="projects__program--span">JavaScript</span>
+        </p>
+        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
+           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
+           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
+           ac fringilla ipsum arcu vitae urna.
+        </p>
+        <a href="https://jrnerio30.github.io/Portfolio/" class="projects__button" role="link" target="_blank">View</a>
+      </li>
+      <li class="projects__items">
+        <img class="projects__image" src="./assets/photos/urbanzenith.png" alt="UrbanZenith Website with mirror and chairs">
+        <h2 class="projects__title">UrbanZenith</h2>
+        <p class="projects__program">
+          <span class="projects__program--span">HTML</span>
+          <span class="projects__program--span">CSS</span>
+          <span class="projects__program--span">JavaScript</span>
+        </p>
+        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
+           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
+           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
+           ac fringilla ipsum arcu vitae urna.
+        </p>
+        <a href="https://jrnerio30.github.io/UrbanZenith-Designs/" class="projects__button" role="link" target="_blank">View</a>
+      </li>
+      <li class="projects__items">
+        <img class="projects__image" src="./assets/photos/welcometohawaii.png" alt="Welcome to hawaii website">
+        <h2 class="projects__title">Welcome To Hawaii</h2>
+        <p class="projects__program">
+          <span class="projects__program--span">HTML</span>
+          <span class="projects__program--span">CSS</span>
+          <span class="projects__program--span">JavaScript</span>
+        </p>
+        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
+           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
+           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
+           ac fringilla ipsum arcu vitae urna.
+        </p>
+        <a href="https://jrnerio30.github.io/Welcome_To_Hawaii/" class="projects__button" role="link" target="_blank">View</a>
+      </li>
+      <li class="projects__items">
+        <img class="projects__image" src="./assets/photos/pokemonweb.png" alt="Pokemon website for johto region">
+        <h2 class="projects__title">Pokemon Johto</h2>
+        <p class="projects__program">
+          <span class="projects__program--span">HTML</span>
+          <span class="projects__program--span">CSS</span>
+          <span class="projects__program--span">JavaScript</span>
+        </p>
+        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
+           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
+           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
+           ac fringilla ipsum arcu vitae urna.
+        </p>
+        <a href="https://jrnerio30.github.io/Pokemon-Web/" class="projects__button" role="link" target="_blank">View</a>
+      </li>
+    </ul>
   </main>  
 
   <footer class="footer" id="footerID">
-    <h2 class="footer__title">Footer</h2>
+    <div class="footer__title__container">
+      <h2 class="footer__title">
+        Footer
+      </h2>
+    </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>

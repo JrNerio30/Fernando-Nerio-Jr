@@ -58,6 +58,15 @@
     opacity: 1;
     transform: translateX(0);
   }
+
+  .projects__items{
+    border-radius: 1rem;
+  }
+
+  .projects__image{
+    border-radius: 0.75rem;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -233,6 +242,15 @@
     /* About Button Container */
   .about__button__container{
     margin-block: 1rem;
+  }
+
+  .projects__items{
+    border-radius: 1rem;
+  }
+
+  
+  .projects__image{
+    border-radius: 0.75rem;
   }
 
 }
