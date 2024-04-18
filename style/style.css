@@ -514,12 +514,14 @@ body,html{
   font-size: 1.5rem;
   align-self: baseline;
   margin-top: 1rem;
+  margin-left: 2rem;
   word-break: break-all;
 }
 
 .projects__program{
   align-self: baseline;
   margin-top: 2rem;
+  margin-left: 2rem;
   font-family: "Nippo-Medium";
   color: white;
   font-size: 13px;
