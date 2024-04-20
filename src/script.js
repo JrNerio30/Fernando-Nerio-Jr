@@ -61,14 +61,17 @@ window.addEventListener("scroll", function () {
 });
 
 // Projects Items
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   const projectItemsList = document.querySelectorAll(".projects__items");
-  projectItemsList.forEach(function(projectItems) {
+  projectItemsList.forEach(function (projectItems) {
     const projectItemsPosition = projectItems.getBoundingClientRect();
 
-    if(projectItemsPosition.top < window.innerHeight && projectItemsPosition.bottom >= 0){
+    if (
+      projectItemsPosition.top < window.innerHeight &&
+      projectItemsPosition.bottom >= 0
+    ) {
       projectItems.classList.add("visible");
-    }else{
+    } else {
       projectItems.classList.remove("visible");
     }
   });
