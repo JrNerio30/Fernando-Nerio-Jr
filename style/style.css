@@ -399,6 +399,7 @@ body,html{
 
 /* Skills Items */
 .skills__items{
+  padding-top: 1.3rem;
   text-align: center;
   flex-basis: 170px;
   transform: rotateY(0);
