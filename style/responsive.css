@@ -18,13 +18,11 @@
   }
 
   .hero__title__container{
-    margin-inline: 5rem;
-    margin-top: 10rem;
+    margin-block: 0 2rem;
   }
 
   .hero__box{
-    margin-inline: 5rem;
-    margin-bottom: 5rem;
+    margin-right: 2rem;
   }
 
   /* Content Container */
@@ -141,10 +139,6 @@
 
   .hero{
     gap: 5rem;
-  }
-
-  .hero__title__container{
-    margin: 0 0 0 1rem;
   }
 
   .hero__text{
