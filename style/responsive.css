@@ -1,9 +1,10 @@
+
 @media screen and (min-width: 768px) {
   .navigation{
     padding: 1rem 3rem;
     position: fixed;
     top: 1%;
-    left: 20%;
+    left: 16%;
     z-index: 2;
     transform: clamp(-50% -50%);
     width: clamp(10rem, 50vw, 70vw);
@@ -18,7 +19,7 @@
   }
 
   .hero__title__container{
-    margin-block: 0 2rem;
+    margin-block: 5rem 2rem;
   }
 
   .hero__box{
@@ -61,6 +62,14 @@
 
   .projects__image{
     border-radius: 0.75rem;
+  }
+
+}
+
+@media screen and (min-width: 820px) {
+
+  .hero__title__container{
+    margin-block: 0 2rem;
   }
 
 }
