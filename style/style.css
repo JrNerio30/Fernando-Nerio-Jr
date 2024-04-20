@@ -42,9 +42,8 @@ body,html{
   z-index: 2;
   transform: clamp(-50% -50%);
   width: 100%;
-  backdrop-filter: blur(1rem) saturate(200%);
-  -webkit-backdrop-filter: blur(8px) saturate(200%);
-  background-color: rgba(255, 255, 255, 0.67);
+  mix-blend-mode: difference;
+  background-color: white;
   display: flex;
   justify-content: space-between;
 }
@@ -74,6 +73,7 @@ body,html{
   display: none;
   text-decoration: none;
   color: black;
+  mix-blend-mode: hard-light;
   position: relative;
 }
 
@@ -84,6 +84,7 @@ body,html{
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
+  mix-blend-mode: hard-light;
   background: black;
   height: 3px;
   width: 0%;
@@ -386,7 +387,7 @@ body,html{
 
 /* ||SKILLS */
 .skills{
-  padding: 1% 0;
+  height: 15vh;
   background-color: white;
 }
 
@@ -399,6 +400,7 @@ body,html{
 
 /* Skills Items */
 .skills__items{
+  margin-top: 3rem;
   text-align: center;
   flex-basis: 170px;
   transform: rotateY(0);
