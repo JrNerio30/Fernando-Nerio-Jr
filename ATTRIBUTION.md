@@ -64,6 +64,10 @@
 * Used Chat-GPT for code clarifaction
 * IDEA: https://www.leedave.com/ (Hero Page where it says "Based in Seattle")
 
+<!-- CSS GENERATOR -->
+## CSS Generator
+* https://cssgenerator.pl/en/box-shadow-generator/ 
+
 <!-- ICONS -->
 ## Icons
 ### HTML
