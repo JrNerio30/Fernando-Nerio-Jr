@@ -233,7 +233,7 @@ body,html{
 /* || CONTENT */
 .about{
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   background-color: black;
   display: flex;
   align-items: center;
@@ -512,12 +512,14 @@ body,html{
   font-size: 1.5rem;
   align-self: baseline;
   margin-top: 1rem;
+  margin-left: 2rem;
   word-break: break-all;
 }
 
 .projects__program{
   align-self: baseline;
   margin-top: 2rem;
+  margin-left: 2rem;
   font-family: "Nippo-Medium";
   color: white;
   font-size: 13px;
