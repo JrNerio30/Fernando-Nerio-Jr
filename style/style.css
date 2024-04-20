@@ -198,7 +198,6 @@ body,html{
 /* Hero Box */
 .hero__box{
   overflow: hidden;
-  margin-inline: 1rem; 
   width: 20rem;
   height: 20rem;
   background-color: black;
