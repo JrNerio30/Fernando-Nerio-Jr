@@ -47,6 +47,7 @@ body,html{
   background-color: rgba(255, 255, 255, 0.67);
   display: flex;
   justify-content: space-between;
+  box-shadow: 0 1px 5px 0 black;
 }
 
 /* Navigation Logo */
@@ -415,12 +416,12 @@ body,html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 10rem;
+  gap: 3rem;
 }
 
 /* Projects Title Container */
 .projects__header__container{
-  margin-top: 7rem;
+  margin-block: 7rem 2rem;
   display: flex;
   gap: 1rem;
   align-items: center;
@@ -467,10 +468,13 @@ body,html{
 .projects__container{
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10rem;
-  gap: 5rem;
-  align-items: center;
   justify-content: center;
+  gap: 3rem;
+}
+
+/* Projects Container Bottom */
+.bottom{
+  margin-bottom: 7rem;
 }
 
 /* Projects Items */
@@ -481,7 +485,7 @@ body,html{
   flex-direction: column;
   width: 100%;
   max-width: 28rem;
-  min-height: 32rem;
+  min-height: 33.5rem;
   background-color: black;
   -webkit-box-shadow: 0px 0px 28px -18px rgb(255, 255, 255);
   -moz-box-shadow: 0px 0px 28px -18px rgb(255, 255, 255);
@@ -546,6 +550,16 @@ body,html{
   color: black;
   background-color: white;
   padding: 5px 10px;
+}
+
+.projects__button--arrow{
+  display: none;
+  color: black;
+}
+
+.projects__button--arrow.active{
+  display: inline-block;
+  color: black;
 }
 
 
