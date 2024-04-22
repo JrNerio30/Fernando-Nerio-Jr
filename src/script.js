@@ -8,8 +8,6 @@ window.addEventListener("scroll", function () {
     contentTextPosition.bottom >= 0
   ) {
     contentText.classList.add("visible");
-  } else {
-    contentText.classList.remove("visible");
   }
 });
 
@@ -23,8 +21,6 @@ window.addEventListener("scroll", function () {
     contentPhotoPosition.bottom >= 0
   ) {
     contentPhoto.classList.add("visible");
-  } else {
-    contentPhoto.classList.remove("visible");
   }
 });
 
@@ -39,8 +35,6 @@ window.addEventListener("scroll", function () {
       skillsItemsPosition.bottom >= 0
     ) {
       skillsItems.classList.add("visible");
-    } else {
-      skillsItems.classList.remove("visible");
     }
   });
 });
@@ -55,8 +49,6 @@ window.addEventListener("scroll", function () {
     projectstitlePosition.bottom >= 0
   ) {
     projectstitle.classList.add("visible");
-  } else {
-    projectstitle.classList.remove("visible");
   }
 });
 
@@ -71,8 +63,6 @@ window.addEventListener("scroll", function () {
       projectItemsPosition.bottom >= 0
     ) {
       projectItems.classList.add("visible");
-    } else {
-      projectItems.classList.remove("visible");
     }
   });
 });
@@ -126,6 +116,34 @@ aboutButton.addEventListener("mouseenter", function () {
 aboutButton.addEventListener("mouseleave", function () {
   aboutButtonArrow.classList.remove("active");
 });
+
+// Accordion Drop Down Menu
+const hamburgerMenu = document.querySelector(".hamburger__container");
+const navigation = document.querySelector(".navigation");
+const navigationContainer = document.querySelector(".navigation__container");
+const navigationLinks = document.querySelectorAll(".navigation__links");
+const navigationLogo = document.querySelector(".navigation__logo__link");
+
+  hamburgerMenu.addEventListener("click", function() {
+    navigation.classList.toggle("dropdown");
+    navigationContainer.classList.toggle("dropdown");
+  });
+
+  navigationLinks.forEach(function(removeDropdown) {
+    removeDropdown.addEventListener("click", function() {
+      navigation.classList.remove("dropdown");
+      navigationContainer.classList.remove("dropdown");
+    });
+  });
+
+  navigationLogo.addEventListener("click", function() {
+    navigation.classList.remove("dropdown");
+    navigationContainer.classList.remove("dropdown");
+  });
+
+  
+
+
 
 // Function to get current time in Calgary
 function getCurrentTimeInCalgary() {

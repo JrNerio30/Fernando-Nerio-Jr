@@ -7,7 +7,7 @@ gsap.to(".preloader", {
 
 // Navigation
 gsap.fromTo(
-  ".navigation",
+  ".nav__bar",
   {
     y: -200,
   },
