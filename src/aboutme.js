@@ -18,6 +18,30 @@ for(i = 0; i <= 7; i++){
   preloaderBars.classList.add("about__preloader__bars")
 }
 
+// Accordion Drop Down Menu
+const hamburgerMenu = document.querySelector(".hamburger__container");
+const navigation = document.querySelector(".navigation");
+const navigationContainer = document.querySelector(".navigation__container");
+const navigationLinks = document.querySelectorAll(".navigation__links");
+const navigationLogo = document.querySelector(".navigation__logo__link");
+
+  hamburgerMenu.addEventListener("click", function() {
+    navigation.classList.toggle("dropdown");
+    navigationContainer.classList.toggle("dropdown");
+  });
+
+  navigationLinks.forEach(function(removeDropdown) {
+    removeDropdown.addEventListener("click", function() {
+      navigation.classList.remove("dropdown");
+      navigationContainer.classList.remove("dropdown");
+    });
+  });
+
+  navigationLogo.addEventListener("click", function() {
+    navigation.classList.remove("dropdown");
+    navigationContainer.classList.remove("dropdown");
+  });
+
 // Toggle "active" class name when -->
 const toggleCursor = function () {
   cursorRing.classList.toggle("active");
