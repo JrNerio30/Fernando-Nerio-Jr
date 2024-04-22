@@ -35,19 +35,50 @@ body,html{
 }
 
 /* ||NAVIGATION */
-.navigation{
-  overflow: hidden;
-  padding: 1rem 3rem;
-  position: fixed;
-  z-index: 2;
-  transform: clamp(-50% -50%);
+.hamburger__container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hamburger__lines{
+  background-color: black;
+  width: 40px;
+  height: 3px;
+}
+
+.nav__bar{
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  box-shadow: 0 1px 5px 0 black;
+}
+
+.nav__mobile__container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navigation{
+  padding: 1rem 2rem;
   backdrop-filter: blur(1rem) saturate(200%);
-  -webkit-backdrop-filter: blur(8px) saturate(200%);
   background-color: rgba(255, 255, 255, 0.67);
   display: flex;
   justify-content: space-between;
-  box-shadow: 0 1px 5px 0 black;
+  transition: all 0.8s;
+  flex-direction: column;
+  height: 3vh;
+}
+
+.navigation.dropdown{
+  height: 100vh;
 }
 
 /* Navigation Logo */
@@ -58,10 +89,19 @@ body,html{
 
 /* Navigation Container */
 .navigation__container{
-  display: flex;
-  align-items: center;
-  gap: 2rem;
+  display: none;
+  transition: all 1s;
 }
+
+/* Navigation Container */
+.navigation__container.dropdown{
+  display: flex;
+  margin-top: 10rem;
+  gap: 5rem;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 /* Navigation Menu */
 .navigation__menu{
@@ -72,7 +112,6 @@ body,html{
 
 /* Navigation Links */
 .navigation__links{
-  display: none;
   text-decoration: none;
   color: black;
   position: relative;
