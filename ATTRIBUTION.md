@@ -78,3 +78,6 @@
 * https://icons8.com/icon/39854/javascript
 ### SASS
 * https://icons8.com/icon/H997wGMPVphe/sass 
+
+## Social Media Icons
+https://ionic.io/ionicons 
