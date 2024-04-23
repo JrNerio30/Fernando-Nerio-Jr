@@ -118,16 +118,31 @@ aboutButton.addEventListener("mouseleave", function () {
 });
 
 // Accordion Drop Down Menu
-const hamburgerMenu = document.querySelector(".hamburger__container");
 const navigation = document.querySelector(".navigation");
 const navigationContainer = document.querySelector(".navigation__container");
 const navigationLinks = document.querySelectorAll(".navigation__links");
 const navigationLogo = document.querySelector(".navigation__logo__link");
+const hamburgerMenu = document.querySelector(".hamburger__container");
+const hamburgerLines = document.querySelectorAll(".hamburger__lines");
 
   hamburgerMenu.addEventListener("click", function() {
     navigation.classList.toggle("dropdown");
     navigationContainer.classList.toggle("dropdown");
   });
+
+  hamburgerMenu.addEventListener("click", function() {
+    hamburgerLines.forEach(function(exit) {
+      exit.classList.toggle("exit");
+    });
+  });
+
+  navigationLinks.forEach(function(remove) {
+    remove.addEventListener("click", function() {
+      hamburgerLines.forEach(function(noX) {
+        noX.classList.remove("exit")
+      });
+    });
+  })
 
   navigationLinks.forEach(function(removeDropdown) {
     removeDropdown.addEventListener("click", function() {
@@ -140,10 +155,6 @@ const navigationLogo = document.querySelector(".navigation__logo__link");
     navigation.classList.remove("dropdown");
     navigationContainer.classList.remove("dropdown");
   });
-
-  
-
-
 
 // Function to get current time in Calgary
 function getCurrentTimeInCalgary() {
@@ -173,3 +184,9 @@ function updateTime() {
 
 // Call the updateTime function when the page loads
 window.onload = updateTime;
+
+// Copy Right Year
+const year = new Date().getFullYear();
+const copyright =  `${year} ${"Fernando Nerio Jr"}`;
+
+document.getElementById("copyRightYear").outerHTML = copyright;
