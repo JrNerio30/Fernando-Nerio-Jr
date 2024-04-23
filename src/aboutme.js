@@ -19,16 +19,31 @@ for(i = 0; i <= 7; i++){
 }
 
 // Accordion Drop Down Menu
-const hamburgerMenu = document.querySelector(".hamburger__container");
 const navigation = document.querySelector(".navigation");
 const navigationContainer = document.querySelector(".navigation__container");
 const navigationLinks = document.querySelectorAll(".navigation__links");
 const navigationLogo = document.querySelector(".navigation__logo__link");
+const hamburgerMenu = document.querySelector(".hamburger__container");
+const hamburgerLines = document.querySelectorAll(".hamburger__lines");
 
   hamburgerMenu.addEventListener("click", function() {
     navigation.classList.toggle("dropdown");
     navigationContainer.classList.toggle("dropdown");
   });
+
+  hamburgerMenu.addEventListener("click", function() {
+    hamburgerLines.forEach(function(exit) {
+      exit.classList.toggle("exit");
+    });
+  });
+
+  navigationLinks.forEach(function(remove) {
+    remove.addEventListener("click", function() {
+      hamburgerLines.forEach(function(noX) {
+        noX.classList.remove("exit")
+      });
+    });
+  })
 
   navigationLinks.forEach(function(removeDropdown) {
     removeDropdown.addEventListener("click", function() {
