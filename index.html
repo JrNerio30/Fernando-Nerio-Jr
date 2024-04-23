@@ -2,45 +2,57 @@
 
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Fernando Nerio Jr</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./style/reset.css">
-    <link rel="stylesheet" type="text/css" href="./style/keyframes.css">
-    <link rel="stylesheet" type="text/css" href="./style/style.css">
-    <link rel="stylesheet" type="text/css" href="./style/responsive.css">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="./style/reset.css" />
+    <link rel="stylesheet" type="text/css" href="./style/keyframes.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style/responsive.css" />
   </head>
   <body>
     <div class="cursor__ring" id="cursor__ringID1">
       <div class="cursor__ring__middle"></div>
       <div class="cursor__ring__middle"></div>
     </div>
-    <div class="noise">
-    </div>
-    <section class="preloader" id="preloaderID"> 
+    <div class="noise"></div>
+    <section class="preloader" id="preloaderID">
       <div class="preloader__container">
         <h1 class="preloader__text">Hello World.</h1>
       </div>
     </section>
     <section class="nav__bar">
       <nav class="navigation">
-        <main class="nav">
-          <header class="nav__mobile__container">
-            <a class="navigation__logo__link" href="#heroID"><img class="navigation__logo" src="./assets/icons/black-and-white-logo.png" alt="black 'FN' logo" width="48" height="25"></a>
+        <div class="nav">
+          <div class="nav__mobile__container">
+            <a class="navigation__logo__link" href="#heroID"
+              ><img
+                class="navigation__logo"
+                src="./assets/icons/black-and-white-logo.png"
+                alt="black 'FN' logo"
+                width="48"
+                height="25"
+            /></a>
             <div class="hamburger__container">
               <div class="hamburger__lines"></div>
               <div class="hamburger__lines"></div>
               <div class="hamburger__lines"></div>
             </div>
-          </header>
-          <ul class="navigation__container">
-            <li class="navigation__menu"><a class="navigation__links" href="#aboutID">About</a></li>
-            <li class="navigation__menu"><a class="navigation__links" href="#projectsID">Projects</a></li>
-            <li class="navigation__menu"><a class="navigation__links" href="#footerID">Contact</a></li>
-          </ul>
-        </main>
+          </div>
+        </div>
+        <ul class="navigation__container">
+          <li class="navigation__menu">
+            <a class="navigation__links" href="#aboutID">About</a>
+          </li>
+          <li class="navigation__menu">
+            <a class="navigation__links" href="#projectsID">Projects</a>
+          </li>
+          <li class="navigation__menu">
+            <a class="navigation__links" href="#footerID">Contact</a>
+          </li>
+        </ul>
       </nav>
     </section>
 
@@ -48,160 +60,299 @@
       <ul class="hero__title__container">
         <li><h2 class="hero__subheader">My name is</h2></li>
         <li><h2 class="hero__header">Fernando Nerio Jr</h2></li>
-        <li><div class="hero__text__inline"><h3 class="hero__text">I'm a Web-developer.</h3></div></li>
-        <li><h4 class="hero__time"></h4></li>
+        <li>
+          <div class="hero__text__inline">
+            <h3 class="hero__text">I'm a Web-developer.</h3>
+          </div>
+        </li>
+        <li><p class="hero__time"></p></li>
       </ul>
       <div class="hero__box">
-        <ul class="hero__box__container">
-        </ul>
+        <ul class="hero__box__container"></ul>
       </div>
       <a href="#aboutID">
         <div class="hero__button">
           <span class="hero__button--arrows" title="Arrow Button"></span>
           <span class="hero__button--arrows" title="Arrow Button"></span>
           <span class="hero__button--arrows" title="Arrow Button"></span>
-        <p class="hero__button__text" role="link">this is just a text</p>
-      </div>
-    </a>
-  </header>
-  
-  <section class="about" id="aboutID">
-    <ul class="about__text__container" id="text__containerID">
-      <li class="about__text--title">
-        <h2 class="about__text--header">
-          About Me
-        </h2>
-      </li>
-      <li class="about__text">
-        <p class="about__text--paragraph">
-          I'm Fernando Nerio Jr, a dedicated student with a passion for web design and development. 
-          Through my coursework and extracurricular activities, I've honed my skills in coding 
-          languages like HTML, CSS, and JavaScript, and I'm eager to apply them to real-world projects. 
-          Whether it's designing intuitive user interfaces or delving into back-end development, 
-          I thrive on the challenge of creating dynamic and visually appealing websites.
-        </p>
-      </li>
-      <li class="about__text">
-        <p class="about__text--paragraph">
-          Outside of classes, I enjoy exploring new design trends and experimenting with 
-          different coding techniques to expand my skill set. I'm always seeking opportunities 
-          to learn and grow, whether through internships, workshops, or personal projects. 
-          With a drive for excellence and a love for innovation, I'm excited to embark on 
-          this journey in web design and development.
-        </p>
-      </li>
-      <li class="about__text">
-        <div class="about__button__container">
-          <a class="about__button" role="link" id="about__button--ID" href="./aboutme.html">Learn More <span class="about__button--arrow">🡵</span></a>
+          <p class="hero__button__text" role="link">this is just a text</p>
         </div>
-      </li>
-    </ul>
-    <div class="about__photo__container" id="photo__containerID">
-      <span class="about__frame"></span>
-      <span class="about__frame"></span>
-      <span class="about__frame"></span>
-      <span class="about__frame"></span>
-      <img class="about__photo" src="./assets/photos/selfiephoto.png" alt="fernando nerio jr smilling selfie photo" width="320" height="511">
-    </div>
-  </section>
+      </a>
+    </header>
 
-  <aside class="skills" id="skillsID">
-    <ul class="skills__container">
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/htmlicon.png" alt="html logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/cssicon.png" alt="css logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/javascripticon.png" alt="javascript logo black"></li>
-      <li class="skills__items"><img class="skills__icons" src="./assets/icons/sassicon.png" alt="sass logo black"></li>
-    </ul>
-  </aside>
+    <section class="about" id="aboutID">
+      <ul class="about__text__container" id="text__containerID">
+        <li class="about__text--title">
+          <h2 class="about__text--header">About Me</h2>
+        </li>
+        <li class="about__text">
+          <p class="about__text--paragraph">
+            I'm Fernando Nerio Jr, a dedicated student with a passion for web
+            design and development. Through my coursework and extracurricular
+            activities, I've honed my skills in coding languages like HTML, CSS,
+            and JavaScript, and I'm eager to apply them to real-world projects.
+            Whether it's designing intuitive user interfaces or delving into
+            back-end development, I thrive on the challenge of creating dynamic
+            and visually appealing websites.
+          </p>
+        </li>
+        <li class="about__text">
+          <p class="about__text--paragraph">
+            Outside of classes, I enjoy exploring new design trends and
+            experimenting with different coding techniques to expand my skill
+            set. I'm always seeking opportunities to learn and grow, whether
+            through internships, workshops, or personal projects. With a drive
+            for excellence and a love for innovation, I'm excited to embark on
+            this journey in web design and development.
+          </p>
+        </li>
+        <li class="about__text">
+          <div class="about__button__container">
+            <a
+              class="about__button"
+              role="link"
+              id="about__button--ID"
+              href="./aboutme.html"
+              >Learn More <span class="about__button--arrow">🡵</span></a
+            >
+          </div>
+        </li>
+      </ul>
+      <div class="about__photo__container" id="photo__containerID">
+        <span class="about__frame"></span>
+        <span class="about__frame"></span>
+        <span class="about__frame"></span>
+        <span class="about__frame"></span>
+        <img
+          class="about__photo"
+          src="./assets/photos/selfiephoto.png"
+          alt="fernando nerio jr smilling selfie photo"
+          width="320"
+          height="511"
+        />
+      </div>
+    </section>
 
-  <main class="projects" id="projectsID">
-    <div class="projects__header__container">
-      <div class="projects__triangle--left"></div>
-      <h2 class="projects__header">
-        Projects
-      </h2>
-      <div class="projects__triangle--right"></div>
-    </div>
-    <ul class="projects__container">
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/portfolio.png" alt="Hello World Fernando's Portfolio">
-        <h2 class="projects__title">Portfolio</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Portfolio/" class="projects__button" role="link" target="_blank">View <span class="projects__button--arrow">🡵</span></a>
-      </li>
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/urbanzenith.png" alt="UrbanZenith Website with mirror and chairs">
-        <h2 class="projects__title">UrbanZenith</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/UrbanZenith-Designs/" class="projects__button" role="link" target="_blank">View <span class="projects__button--arrow">🡵</span></a>
-      </li>
-    </ul>
-    <ul class="projects__container bottom" >
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/welcometohawaii.png" alt="Welcome to hawaii website">
-        <h2 class="projects__title">Welcome To Hawaii</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Welcome_To_Hawaii/" class="projects__button" role="link" target="_blank">View <span class="projects__button--arrow">🡵</span></a>
-      </li>
-      <li class="projects__items">
-        <img class="projects__image" src="./assets/photos/pokemonweb.png" alt="Pokemon website for johto region">
-        <h2 class="projects__title">Pokemon Johto</h2>
-        <p class="projects__program">
-          <span class="projects__program--span">HTML</span>
-          <span class="projects__program--span">CSS</span>
-          <span class="projects__program--span">JavaScript</span>
-        </p>
-        <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-           Fusce auctor erat ut justo posuere, non imperdiet metus sodales. Pellentesque dui odio, 
-           tempor sit amet ligula vel, dignissim pretium enim. Cras pulvinar sodales eleifend. 
-           Etiam laoreet, diam nec gravida blandit, sem leo pellentesque erat, 
-           ac fringilla ipsum arcu vitae urna.
-        </p>
-        <a href="https://jrnerio30.github.io/Pokemon-Web/" class="projects__button" role="link" target="_blank">View <span class="projects__button--arrow">🡵</span></a>
-      </li>
-    </ul>
-  </main>  
+    <aside class="skills" id="skillsID">
+      <ul class="skills__container">
+        <li class="skills__items">
+          <img
+            class="skills__icons"
+            src="./assets/icons/htmlicon.png"
+            alt="html logo black"
+          />
+        </li>
+        <li class="skills__items">
+          <img
+            class="skills__icons"
+            src="./assets/icons/cssicon.png"
+            alt="css logo black"
+          />
+        </li>
+        <li class="skills__items">
+          <img
+            class="skills__icons"
+            src="./assets/icons/javascripticon.png"
+            alt="javascript logo black"
+          />
+        </li>
+        <li class="skills__items">
+          <img
+            class="skills__icons"
+            src="./assets/icons/sassicon.png"
+            alt="sass logo black"
+          />
+        </li>
+      </ul>
+    </aside>
 
-  <footer class="footer" id="footerID">
-    <div class="footer__title__container">
-      <h2 class="footer__title">
-        Footer
-      </h2>
-    </div>
-  </footer>
+    <main class="projects" id="projectsID">
+      <div class="projects__header__container">
+        <div class="projects__triangle--left"></div>
+        <h2 class="projects__header">Projects</h2>
+        <div class="projects__triangle--right"></div>
+      </div>
+      <ul class="projects__container">
+        <li class="projects__items">
+          <img
+            class="projects__image"
+            src="./assets/photos/portfolio.png"
+            alt="Hello World Fernando's Portfolio"
+          />
+          <h2 class="projects__title">Portfolio</h2>
+          <p class="projects__program">
+            <span class="projects__program--span">HTML</span>
+            <span class="projects__program--span">CSS</span>
+            <span class="projects__program--span">JavaScript</span>
+          </p>
+          <p class="projects__text">
+            This is my website is my portfolio, where I've embraced minimalism
+            with a black and white color scheme and with just two font styles,
+            it's a clean refined showcase of my work.
+          </p>
+          <a
+            href="https://jrnerio30.github.io/Portfolio/"
+            class="projects__button"
+            role="link"
+            target="_blank"
+            >View <span class="projects__button--arrow">🡵</span></a
+          >
+        </li>
+        <li class="projects__items">
+          <img
+            class="projects__image"
+            src="./assets/photos/urbanzenith.png"
+            alt="UrbanZenith Website with mirror and chairs"
+          />
+          <h2 class="projects__title">UrbanZenith</h2>
+          <p class="projects__program">
+            <span class="projects__program--span">HTML</span>
+            <span class="projects__program--span">CSS</span>
+            <span class="projects__program--span">JavaScript</span>
+          </p>
+          <p class="projects__text">
+            Discover urban elegance at UrbanZenith Designs. Elevate your space
+            with our modern, timeless furniture. Redefine your home today!
+          </p>
+          <a
+            href="https://jrnerio30.github.io/UrbanZenith-Designs/"
+            class="projects__button"
+            role="link"
+            target="_blank"
+            >View <span class="projects__button--arrow">🡵</span></a
+          >s
+        </li>
+      </ul>
+      <ul class="projects__container bottom">
+        <li class="projects__items">
+          <img
+            class="projects__image"
+            src="./assets/photos/welcometohawaii.png"
+            alt="Welcome to hawaii website"
+          />
+          <h2 class="projects__title">Welcome To Hawaii</h2>
+          <p class="projects__program">
+            <span class="projects__program--span">HTML</span>
+            <span class="projects__program--span">CSS</span>
+            <span class="projects__program--span">JavaScript</span>
+          </p>
+          <p class="projects__text">
+            Discover Hawaii's captivating beauty. Where golden sands meet
+            crystal-clear waters. Unwind on serene beaches, each with its unique
+            charm. Experience sun, sea, and the spirit of aloha. Your
+            unforgettable Hawaiian journey awaits!
+          </p>
+          <a
+            href="https://jrnerio30.github.io/Welcome_To_Hawaii/"
+            class="projects__button"
+            role="link"
+            target="_blank"
+            >View <span class="projects__button--arrow">🡵</span></a
+          >
+        </li>
+        <li class="projects__items">
+          <img
+            class="projects__image"
+            src="./assets/photos/pokemonweb.png"
+            alt="Pokemon website for johto region"
+          />
+          <h2 class="projects__title">Pokemon</h2>
+          <p class="projects__program">
+            <span class="projects__program--span">HTML</span>
+            <span class="projects__program--span">CSS</span>
+            <span class="projects__program--span">JavaScript</span>
+          </p>
+          <p class="projects__text">
+            Explore a world of Pokémon nostalgia with our website, powered by
+            the exclusive Johto region API. Immerse yourself in the charm of
+            Johto's Pokémon and embark on an adventure like never before!
+          </p>
+          <a
+            href="https://jrnerio30.github.io/Pokemon-Web/"
+            class="projects__button"
+            role="link"
+            target="_blank"
+            >View <span class="projects__button--arrow">🡵</span></a
+          >
+        </li>
+      </ul>
+    </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="./src/gsap.js" defer></script>
-  <script src="./src/script.js" defer></script>
+    <footer class="footer" id="footerID">
+      <ul>
+        <li class="footer__list">
+          <div class="footer__wrapper">
+            <h2 class="footer__brand--title">Fernando Nerio Jr</h2>
+            <a
+              class="footer__linkedin"
+              href="https://www.linkedin.com/in/fernandoneriojr/"
+              target="_blank"
+            >
+              <ion-icon class="footer__icons" name="logo-linkedin"></ion-icon>
+              Fernando Nerio Jr
+            </a>
+            <a
+              class="footer__email"
+              href="mail&#116;&#111;&#58;%66er&#110;a&#110;do&#46;ne&#37;72ioj%&#55;2&#51;0&#64;gma%&#54;9l&#46;co&#37;6D"
+            >
+              <ion-icon class="footer__icons" name="mail"></ion-icon>
+              &#102;ernando&#46;n&#101;r&#105;ojr&#51;0&#64;gmail&#46;co&#109;
+            </a>
+            <a
+              class="footer__github"
+              href="https://github.com/JrNerio30"
+              target="_blank"
+            >
+              <ion-icon class="footer__icons" name="logo-github"></ion-icon>
+              JrNerio30
+            </a>
+          </div>
+          <div class="footer__wrapper">
+            <h2 class="footer__links--title">Links</h2>
+            <ul>
+              <li class="footer__links">
+                <a class="footer__links--name" href="#heroID">Home</a>
+              </li>
+              <li class="footer__links">
+                <a class="footer__links--name" href="#aboutID">About Me</a>
+              </li>
+              <li class="footer__links">
+                <a class="footer__links--name" href="#projectsID">Projects</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrapper">
+            <a href="#heroID">
+              <img
+                class="footer__logo"
+                src="./assets/icons/black-and-white-logo.png"
+                alt="Fernando Nerio FN logo"
+                width="100"
+                height="48"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="copyright">
+        &copy;
+        <p class="footer__copyright" id="copyRightYear"></p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script src="./src/gsap.js" defer></script>
+    <script src="./src/script.js" defer></script>
   </body>
 </html>
