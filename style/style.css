@@ -45,6 +45,21 @@ body,html{
   background-color: black;
   width: 40px;
   height: 3px;
+  transition: all 0.5s;
+}
+
+.hamburger__container > .hamburger__lines:nth-child(1).exit{
+  transform-origin: left;
+  transform: rotate(33deg);
+}
+
+.hamburger__container > .hamburger__lines:nth-child(2).exit{
+  transform: scale(0);
+}
+
+.hamburger__container > .hamburger__lines:nth-child(3).exit{
+  transform-origin: left;
+  transform: rotate(-33deg);
 }
 
 .nav__bar{
@@ -56,6 +71,7 @@ body,html{
 }
 
 .nav__mobile__container{
+  flex-basis: 250px;
   display: flex;
   justify-content: space-between;
 }
@@ -68,10 +84,9 @@ body,html{
 
 .navigation{
   padding: 1rem 2rem;
-  backdrop-filter: blur(1rem) saturate(200%);
+  backdrop-filter: blur(4rem) saturate(200%);
   background-color: rgba(255, 255, 255, 0.67);
   display: flex;
-  justify-content: space-between;
   transition: all 0.8s;
   flex-direction: column;
   height: 3vh;
@@ -96,7 +111,7 @@ body,html{
 /* Navigation Container */
 .navigation__container.dropdown{
   display: flex;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   gap: 5rem;
   align-items: center;
   flex-direction: column;
@@ -447,7 +462,6 @@ body,html{
   transform: rotateY(360deg);
 }
 
-
 /* || PROJECTS */
 .projects{
   min-height: 130vh;
@@ -524,7 +538,7 @@ body,html{
   flex-direction: column;
   width: 100%;
   max-width: 28rem;
-  min-height: 33.5rem;
+  min-height: 33rem;
   background-color: black;
   -webkit-box-shadow: 0px 0px 28px -18px rgb(255, 255, 255);
   -moz-box-shadow: 0px 0px 28px -18px rgb(255, 255, 255);
@@ -553,14 +567,14 @@ body,html{
   font-size: 1.5rem;
   align-self: baseline;
   margin-top: 1rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   word-break: break-all;
 }
 
 .projects__program{
   align-self: baseline;
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   font-family: "Nippo-Medium";
   color: white;
   font-size: 13px;
@@ -570,7 +584,7 @@ body,html{
   font-family: monospace;
   line-height: 110%;
   color: white;
-  margin: 1.5rem 2rem 1.5rem 2rem;
+  margin: 1.5rem;
 }
 
 .projects__program--span{
@@ -583,12 +597,20 @@ body,html{
 .projects__button{
   font-family: "Nippo-Medium";
   border-radius: 5px;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   align-self: baseline;
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 5px 10px;
+  transition: all 0.2s;
+}
+
+.projects__button:hover{
+  color: white;
+  background-color: black;
+  box-shadow: 0 0 5px 0 white;
+  transform: scale(1.05);
 }
 
 .projects__button--arrow{
@@ -602,19 +624,94 @@ body,html{
 }
 
 
-
 /* || FOOTER */
-.footer{
-  min-height: 20vh;
+.footer {
   background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-height: 30vh;
 }
 
-.footer__title{
+/* footer list container that aligns just the list */
+.footer__list{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; 
+  margin-bottom: 1rem;
+}
+
+/* Footer Information and links margin for mobile */
+.footer__wrapper {
+  margin: 4rem 1rem 1rem 1rem;
+}
+
+/* Footer container heading and pragraph */
+.footer__brand--title{
+  color: black;
   font-family: "Nippo-Medium";
-  font-size: clamp(1rem, 3rem, 5rem);
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+
+
+.footer__linkedin, 
+.footer__email,
+.footer__github{
+  display: block;
+  gap: 0.3rem;
+  text-decoration: none;
+  color: black;
+  font-family: monospace;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  transition: all 0.3s;
+  word-wrap:break-word;
+  margin-bottom: 1rem;
+}
+
+.footer__linkedin:hover, 
+.footer__email:hover,
+.footer__github:hover{
+  text-decoration: underline;
+}
+
+/* Footer title "links" */
+.footer__links--title{
+  color: black;
+  font-family: "Nippo-Medium";
+  margin-bottom: 1rem;
+  font-size: 25px;
+}
+
+
+/* Footer links texts */
+.footer__links{
+  margin-bottom: 1rem;
+}
+
+/* Footer name of the links */
+.footer__links--name{
+  text-decoration: underline;
+  color: black;
+  font-family: monospace;
+  font-size: 16px;
+  transition: all 0.3s;
+  padding-inline: 0.2rem;
+}
+
+.footer__links--name:hover{
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+/* Copyright @ 2024 Aloha */
+.copyright{
+  color: black;
+  font-family: "Nippo-Regular";
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
 }
 
 

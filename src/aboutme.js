@@ -42,6 +42,12 @@ const navigationLogo = document.querySelector(".navigation__logo__link");
     navigationContainer.classList.remove("dropdown");
   });
 
+  // Copy Right Year
+const year = new Date().getFullYear();
+const copyright =  `${year} ${"Fernando Nerio Jr"}`;
+
+document.getElementById("copyRightYear").outerHTML = copyright;
+
 // Toggle "active" class name when -->
 const toggleCursor = function () {
   cursorRing.classList.toggle("active");
