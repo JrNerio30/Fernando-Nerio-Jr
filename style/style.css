@@ -1,27 +1,28 @@
 @import url(../Fonts/css/nippo.css);
 
-::selection{
+::selection {
   mix-blend-mode: difference;
   background-color: red;
   color: white;
 }
 
 /* || BODY BACKGROUND COLOR */
-body,html{
+body,
+html {
   background-color: black;
   cursor: none;
 }
 
 /* Cursor Ring */
-.cursor__ring{
+.cursor__ring {
   display: none;
 }
 /* Cursor Ring Active */
-.cursor__ring.active{
+.cursor__ring.active {
   scale: 0;
 }
 
-.noise::before{
+.noise::before {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,34 +36,34 @@ body,html{
 }
 
 /* ||NAVIGATION */
-.hamburger__container{
+.hamburger__container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.hamburger__lines{
+.hamburger__lines {
   background-color: black;
   width: 40px;
   height: 3px;
   transition: all 0.5s;
 }
 
-.hamburger__container > .hamburger__lines:nth-child(1).exit{
+.hamburger__container > .hamburger__lines:nth-child(1).exit {
   transform-origin: left;
   transform: rotate(33deg);
 }
 
-.hamburger__container > .hamburger__lines:nth-child(2).exit{
+.hamburger__container > .hamburger__lines:nth-child(2).exit {
   transform: scale(0);
 }
 
-.hamburger__container > .hamburger__lines:nth-child(3).exit{
+.hamburger__container > .hamburger__lines:nth-child(3).exit {
   transform-origin: left;
   transform: rotate(-33deg);
 }
 
-.nav__bar{
+.nav__bar {
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -70,21 +71,21 @@ body,html{
   box-shadow: 0 1px 5px 0 black;
 }
 
-.nav__mobile__container{
+.nav__mobile__container {
   flex-basis: 250px;
   display: flex;
   justify-content: space-between;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.navigation{
+.navigation {
   padding: 1rem 2rem;
-  backdrop-filter: blur(4rem) saturate(200%);
+  backdrop-filter: blur(5rem) saturate(200%);
   background-color: rgba(255, 255, 255, 0.67);
   display: flex;
   transition: all 0.8s;
@@ -92,24 +93,24 @@ body,html{
   height: 3vh;
 }
 
-.navigation.dropdown{
+.navigation.dropdown {
   height: 100vh;
 }
 
 /* Navigation Logo */
-.navigation__logo{
+.navigation__logo {
   max-width: 3rem;
   cursor: pointer;
 }
 
 /* Navigation Container */
-.navigation__container{
+.navigation__container {
   display: none;
   transition: all 1s;
 }
 
 /* Navigation Container */
-.navigation__container.dropdown{
+.navigation__container.dropdown {
   display: flex;
   /* margin-top: 10rem; */
   gap: 5rem;
@@ -117,24 +118,23 @@ body,html{
   flex-direction: column;
 }
 
-
 /* Navigation Menu */
-.navigation__menu{
+.navigation__menu {
   font-family: monospace;
   font-weight: bold;
   font-size: 1rem;
 }
 
 /* Navigation Links */
-.navigation__links{
+.navigation__links {
   text-decoration: none;
   color: black;
   position: relative;
 }
 
 /* Navigation Links Before */
-.navigation__links::before{
-  content: '';
+.navigation__links::before {
+  content: "";
   position: absolute;
   top: 20px;
   left: 50%;
@@ -147,12 +147,12 @@ body,html{
 }
 
 /* Navigation Links Hover Effect  */
-.navigation__links:hover:before{
+.navigation__links:hover:before {
   width: 100%;
 }
 
 /* || PRELOADER */
-.preloader{
+.preloader {
   overflow: hidden;
   position: fixed;
   width: 100vw;
@@ -161,18 +161,22 @@ body,html{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: linear-gradient(270deg, rgba(255,255,255,1) 51%, rgba(0,0,0,1) 51%);
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 1) 51%,
+    rgba(0, 0, 0, 1) 51%
+  );
   z-index: 1;
 }
 
 /* Preloader Container */
-.preloader__container{
+.preloader__container {
   display: inline-block;
   margin-left: 0.94rem;
 }
 
 /* Preloader Text */
-.preloader__text{
+.preloader__text {
   mix-blend-mode: difference;
   color: white;
   text-align: center;
@@ -184,13 +188,11 @@ body,html{
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  animation: 
-  typing 2s steps(15),
-  cursor .4s step-end infinite alternate;
+  animation: typing 2s steps(15), cursor 0.4s step-end infinite alternate;
 }
 
 /* || HERO */
-.hero{
+.hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -200,7 +202,7 @@ body,html{
 }
 
 /* Hero Title Container */
-.hero__title__container{
+.hero__title__container {
   margin-block: 6rem 2rem;
   display: flex;
   flex-direction: column;
@@ -209,7 +211,7 @@ body,html{
 }
 
 /* Hero Header */
-.hero__header{
+.hero__header {
   font-family: "Nippo-Medium";
   font-weight: bold;
   font-size: clamp(2rem, 4vw, 5vw);
@@ -219,7 +221,7 @@ body,html{
 }
 
 /* Hero Subheader */
-.hero__subheader{
+.hero__subheader {
   font-family: "Nippo-regular";
   font-weight: bold;
   font-size: clamp(1rem, 2.5vw, 3vw);
@@ -227,12 +229,12 @@ body,html{
   letter-spacing: 5px;
 }
 
-.hero__text__inline{
+.hero__text__inline {
   display: inline-block;
 }
 
 /* Hero text */
-.hero__text{
+.hero__text {
   font-size: clamp(0.75rem, 1.3rem, 1.75rem);
   font-family: monospace;
   font-weight: bold;
@@ -241,9 +243,8 @@ body,html{
   animation: none;
 }
 
-
 /* Hero Time */
-.hero__time{
+.hero__time {
   color: black;
   font-family: monospace;
   font-weight: bold;
@@ -251,7 +252,7 @@ body,html{
 }
 
 /* Hero Box */
-.hero__box{
+.hero__box {
   overflow: hidden;
   width: 20rem;
   height: 20rem;
@@ -262,14 +263,14 @@ body,html{
 }
 
 /* Hero Box Container */
-.hero__box__container{
+.hero__box__container {
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
 /* Hero Box Vector */
-.hero__box--vector{
+.hero__box--vector {
   overflow: hidden;
   mix-blend-mode: difference;
   width: 50rem;
@@ -279,12 +280,12 @@ body,html{
 }
 
 /* Hero Button */
-.hero__button{
+.hero__button {
   display: none;
 }
 
 /* || CONTENT */
-.about{
+.about {
   width: 100%;
   min-height: 100vh;
   background-color: black;
@@ -297,28 +298,28 @@ body,html{
 }
 
 /* Content Container */
-.about__photo__container{
+.about__photo__container {
   overflow: hidden;
   transform: translateY(5rem);
   opacity: 0;
   transition: all 1s;
   margin: 1rem 1rem 5rem 1rem;
-} 
+}
 
 /* About Photo Container when Visible */
-.about__photo__container.visible{
+.about__photo__container.visible {
   transform: translateY(0rem);
   opacity: 1;
   position: relative;
 }
 
 /* About Frame */
-.about__photo__container > .about__frame{
+.about__photo__container > .about__frame {
   z-index: 1;
 }
 
 /* About Frame Child 1*/
-.about__photo__container > .about__frame:nth-child(1){
+.about__photo__container > .about__frame:nth-child(1) {
   position: absolute;
   top: 5px;
   left: 78%;
@@ -331,7 +332,7 @@ body,html{
 }
 
 /* About Frame Child 2*/
-.about__photo__container > .about__frame:nth-child(2){
+.about__photo__container > .about__frame:nth-child(2) {
   position: absolute;
   top: 5px;
   left: 99%;
@@ -343,7 +344,7 @@ body,html{
 }
 
 /* About Frame Child 3*/
-.about__photo__container > .about__frame:nth-child(3){
+.about__photo__container > .about__frame:nth-child(3) {
   position: absolute;
   top: 95.7%;
   left: 22.5%;
@@ -354,7 +355,7 @@ body,html{
 }
 
 /* About Frame Child 4*/
-.about__photo__container > .about__frame:nth-child(4){
+.about__photo__container > .about__frame:nth-child(4) {
   position: absolute;
   top: 36.5%;
   left: 4.3%;
@@ -366,7 +367,7 @@ body,html{
 }
 
 /* About Photo */
-.about__photo{
+.about__photo {
   overflow: hidden;
   margin: 1rem;
   width: 100%;
@@ -374,14 +375,13 @@ body,html{
   height: auto;
   z-index: 1;
   color: white;
-
 }
 
 /* Content Title */
-.about__text__container{ 
+.about__text__container {
   display: flex;
   flex-direction: column;
-  gap: 1rem; 
+  gap: 1rem;
   flex-basis: 500px;
   mix-blend-mode: difference;
   color: white;
@@ -392,31 +392,31 @@ body,html{
 }
 
 /* About Text Container When It's Visible */
-.about__text__container.visible{
+.about__text__container.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* About Text Header */
-.about__text--header{
+.about__text--header {
   font-family: "Nippo-medium";
   font-size: clamp(1rem, 3rem, 5rem);
 }
 
 /* About Text Paragraph */
-.about__text--paragraph{
+.about__text--paragraph {
   font-family: monospace;
   font-size: clamp(10px, 15px, 15px);
   line-height: 120%;
 }
 
 /* About Button Container */
-.about__button__container{
+.about__button__container {
   margin-block: 1rem 2rem;
 }
 
 /* About Button */
-.about__button{
+.about__button {
   position: relative;
   font-family: "Nippo-Medium";
   text-decoration: none;
@@ -427,43 +427,43 @@ body,html{
 }
 
 /* About Button Arrow Symbol */
-.about__button--arrow{
+.about__button--arrow {
   display: none;
   color: black;
 }
 
 /* About Button Arrow MouseEnters event */
-.about__button--arrow.active{
+.about__button--arrow.active {
   display: inline-block;
 }
 
 /* ||SKILLS */
-.skills{
+.skills {
   padding: 1% 0;
   background-color: white;
 }
 
 /* Skills Container */
-.skills__container{
+.skills__container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 /* Skills Items */
-.skills__items{
+.skills__items {
   text-align: center;
   flex-basis: 170px;
   transform: rotateY(0);
   transition: all 0.5s;
 }
 
-.skills__items.visible{
+.skills__items.visible {
   transform: rotateY(360deg);
 }
 
 /* || PROJECTS */
-.projects{
+.projects {
   min-height: 130vh;
   display: flex;
   justify-content: center;
@@ -473,7 +473,7 @@ body,html{
 }
 
 /* Projects Title Container */
-.projects__header__container{
+.projects__header__container {
   margin-block: 7rem 2rem;
   display: flex;
   gap: 1rem;
@@ -484,20 +484,20 @@ body,html{
 }
 
 /* Projects Title Container when Visible */
-.projects__header__container.visible{
+.projects__header__container.visible {
   transform: translateY(0rem);
   opacity: 1;
 }
 
 /* Project Title */
-.projects__header{
+.projects__header {
   font-family: "Nippo-Medium";
   color: white;
   font-size: clamp(2rem, 3vw, 5vw);
 }
 
 /* projects Triangle Left */
-.projects__triangle--left{
+.projects__triangle--left {
   width: 0;
   height: 0;
   background-color: transparent;
@@ -507,7 +507,7 @@ body,html{
 }
 
 /* projects Triangle Right */
-.projects__triangle--right{
+.projects__triangle--right {
   width: 0;
   height: 0;
   background-color: transparent;
@@ -518,7 +518,7 @@ body,html{
 }
 
 /* Projects Container */
-.projects__container{
+.projects__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -526,12 +526,12 @@ body,html{
 }
 
 /* Projects Container Bottom */
-.bottom{
+.bottom {
   margin-bottom: 7rem;
 }
 
 /* Projects Items */
-.projects__items{
+.projects__items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -549,19 +549,19 @@ body,html{
   transition: all 1s;
 }
 
-.projects__items.visible{
+.projects__items.visible {
   transform: translateY(0);
   opacity: 1;
 }
 
-.projects__image{
+.projects__image {
   width: 100%;
   max-width: 25rem;
   height: auto;
   border-radius: none;
 }
 
-.projects__title{
+.projects__title {
   color: white;
   font-family: "Nippo-Bold";
   font-size: 1.5rem;
@@ -571,7 +571,7 @@ body,html{
   word-break: break-all;
 }
 
-.projects__program{
+.projects__program {
   align-self: baseline;
   margin-top: 2rem;
   margin-left: 1.5rem;
@@ -580,21 +580,21 @@ body,html{
   font-size: 13px;
 }
 
-.projects__text{
+.projects__text {
   font-family: monospace;
   line-height: 110%;
   color: white;
   margin: 1.5rem;
 }
 
-.projects__program--span{
+.projects__program--span {
   padding: 2px 5px;
   margin-right: 10px;
   background-color: transparent;
   border: 2px white solid;
 }
 
-.projects__button{
+.projects__button {
   font-family: "Nippo-Medium";
   border-radius: 5px;
   margin-left: 1.5rem;
@@ -606,23 +606,22 @@ body,html{
   transition: all 0.2s;
 }
 
-.projects__button:hover{
+.projects__button:hover {
   color: white;
   background-color: black;
   box-shadow: 0 0 5px 0 white;
   transform: scale(1.05);
 }
 
-.projects__button--arrow{
+.projects__button--arrow {
   display: none;
   color: black;
 }
 
-.projects__button--arrow.active{
+.projects__button--arrow.active {
   display: inline-block;
   color: black;
 }
-
 
 /* || FOOTER */
 .footer {
@@ -631,10 +630,10 @@ body,html{
 }
 
 /* footer list container that aligns just the list */
-.footer__list{
+.footer__list {
   display: flex;
   justify-content: space-evenly;
-  flex-direction: column; 
+  flex-direction: column;
   margin-bottom: 1rem;
 }
 
@@ -644,17 +643,16 @@ body,html{
 }
 
 /* Footer container heading and pragraph */
-.footer__brand--title{
+.footer__brand--title {
   color: black;
   font-family: "Nippo-Medium";
   margin-bottom: 1rem;
   font-size: 30px;
 }
 
-
-.footer__linkedin, 
+.footer__linkedin,
 .footer__email,
-.footer__github{
+.footer__github {
   display: block;
   gap: 0.3rem;
   text-decoration: none;
@@ -665,32 +663,31 @@ body,html{
   text-transform: capitalize;
   flex-wrap: wrap;
   transition: all 0.3s;
-  word-wrap:break-word;
+  word-wrap: break-word;
   margin-bottom: 1rem;
 }
 
-.footer__linkedin:hover, 
+.footer__linkedin:hover,
 .footer__email:hover,
-.footer__github:hover{
+.footer__github:hover {
   text-decoration: underline;
 }
 
 /* Footer title "links" */
-.footer__links--title{
+.footer__links--title {
   color: black;
   font-family: "Nippo-Medium";
   margin-bottom: 1rem;
   font-size: 25px;
 }
 
-
 /* Footer links texts */
-.footer__links{
+.footer__links {
   margin-bottom: 1rem;
 }
 
 /* Footer name of the links */
-.footer__links--name{
+.footer__links--name {
   text-decoration: underline;
   color: black;
   font-family: monospace;
@@ -699,19 +696,17 @@ body,html{
   padding-inline: 0.2rem;
 }
 
-.footer__links--name:hover{
+.footer__links--name:hover {
   background-color: black;
   color: white;
   text-decoration: none;
 }
 
 /* Copyright @ 2024 Aloha */
-.copyright{
+.copyright {
   color: black;
   font-family: "Nippo-Regular";
   display: flex;
   justify-content: center;
   padding-bottom: 2rem;
 }
-
-
