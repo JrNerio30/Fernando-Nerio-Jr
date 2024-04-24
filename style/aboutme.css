@@ -99,7 +99,7 @@ html {
 .navigation {
   padding: 1rem 2rem;
   backdrop-filter: blur(5rem) saturate(200%);
-  background-color: rgba(255, 255, 255, 0.67);
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
   transition: all 0.8s;
   flex-direction: column;
@@ -161,16 +161,6 @@ html {
 /* Navigation Links Hover Effect  */
 .navigation__links:hover:before {
   width: 100%;
-}
-
-.navigation {
-  padding: 1rem 2rem;
-  backdrop-filter: blur(5rem) saturate(200%);
-  background-color: rgba(255, 255, 255, 0.67);
-  display: flex;
-  transition: all 0.8s;
-  flex-direction: column;
-  height: 3vh;
 }
 
 .navigation.dropdown {
