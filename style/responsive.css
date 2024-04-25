@@ -1,10 +1,12 @@
 
 @media screen and (min-width: 768px) {
  
+  /* Hamburger Container */
   .hamburger__container{
     display: none;
   }
   
+  /* navigation Bar */
   .nav__bar{
     top: 2%;
     left: 22%;
@@ -12,37 +14,45 @@
     width: clamp(30rem, 50vw, 70vw);
   }
 
+  /* Navigation that contains mobile navigation menu features*/
   .nav{
     flex-direction: row;
     align-items: center;
   }
 
+  /* Navigation */
   .navigation{
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 3rem;
     flex-direction: row;
     justify-content: space-between;
   }
 
+  /* Navigation dropdown for Tablets */
   .navigation.dropdown{
     height: 3vh;
   }
 
+  /* Navigation Container */
   .navigation__container{
     display: flex;
     align-items: center;
     gap: 2rem;
   }
 
+  /* Navigation Container for tablets*/
   .navigation__container.dropdown{
     display: flex;
     flex-direction: row;
     gap: 2rem;
   }
 
+  /* Hero Title Container */
   .hero__title__container{
     margin-block: 5rem 2rem;
   }
 
+  /* Hero Box */
   .hero__box{
     margin-right: 2rem;
   }
@@ -61,10 +71,12 @@
     transform: translateX(0);
   }
 
+  /* About Photo */
   .about__photo{
     max-width: 15rem;
   }
 
+  /* About Text Container */
   .about__text__container{
     transform: translateX(-20rem);
     opacity: 0;
@@ -72,19 +84,23 @@
     margin: 5rem 2rem 0 2rem;
   }
 
+  /* About Text Container when visible */
   .about__text__container.visible{
     opacity: 1;
     transform: translateX(0);
   }
 
+  /* Project Items */
   .projects__items{
     border-radius: 1rem;
   }
 
+  /* Project Images */
   .projects__image{
     border-radius: 0.75rem;
   }
 
+  /* Footer List */
   .footer__list{
     flex-direction: row;
     align-items: center;
@@ -94,6 +110,7 @@
 
 @media screen and (min-width: 820px) {
 
+  /* hero Title Container */
   .hero__title__container{
     margin-block: 0 2rem;
   }
@@ -101,6 +118,7 @@
 }
 
 @media screen and (min-width: 1000px) {
+  /* About Text Container */
   .about__text__container{
     margin: 0;
   }
@@ -108,6 +126,12 @@
 
 @media screen and (min-width: 1200px) {
 
+    /* Preloader Container */
+    .preloader__container{
+      margin-left: 3.3rem;
+    }
+
+  /* Cursor Ring for Desktops */
   .cursor__ring{
     display: block;
     position: fixed;
@@ -124,6 +148,7 @@
     z-index: 3;
   }
 
+  /* First Cursor X-Axis */
   .cursor__ring > .cursor__ring__middle:nth-child(1){
     background-color: white;
     position: absolute;
@@ -134,6 +159,7 @@
     height: 2px;
   }
 
+  /* Second Cursor Y-Axis */
   .cursor__ring > .cursor__ring__middle:nth-child(2){
     background-color: white;
     position: absolute;
@@ -144,15 +170,17 @@
     height: 10px;
   }
   
+  /* Cursor Ring Active */
   .cursor__ring.active{
     scale: 1;
   }
 
+  /* Haburger Container */
   .hamburger__container{
     display: none;
   }
   
-  
+  /* Navigation Bar */
   .nav__bar{
     top: 2%;
     left: 24%;
@@ -160,44 +188,46 @@
     width: clamp(10rem, 50vw, 70vw);
   }
   
+  /* Nav for desktops */
   .nav{
     flex-direction: row;
     align-items: center;
   }
 
+  /* Navigation */
   .navigation{
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 3rem;
     flex-direction: row;
     margin-top: 0;
     justify-content: space-between;
   }
 
+  /* Navigation for desktops */
   .navigation.dropdown{
     height: 3vh;
   }
 
-
+  /* Navigation Container */
   .navigation__container{
     display: flex;
     align-items: center;
     gap: 2rem;
   }
 
+  /* Navigation Container for desktops */
   .navigation__container.dropdown{
     display: flex;
     flex-direction: row;
     gap: 2rem;
   }
 
-
-  .preloader__container{
-    margin-left: 3.3rem;
-  }
-
+  /* || HERO */
   .hero{
     gap: 5rem;
   }
 
+  /* Hero Text */
   .hero__text{
     border-right: 3px black solid;
     word-break:normal;
@@ -209,11 +239,12 @@
     cursor .4s step-end infinite alternate;
   }
 
+  /* Hero Box */
   .hero__box{
     margin: 0 0 0 5rem;
   }
 
-    /* Hero Button */
+  /* Hero Button */
   .hero__button{
     display: block;
     position: absolute;
@@ -225,7 +256,6 @@
 
   /* Hero Scroll Arrows */
   .hero__button--arrows{
-    /* mix-blend-mode: difference; */
     display: block;
     width: 20px;
     height: 20px;
@@ -270,10 +300,12 @@
     transform: translateX(0);
   }
 
+  /* About Photo */
   .about__photo{
     max-width: 15rem;
   }
 
+  /* About Text Container */
   .about__text__container{
     transform: translateX(-8rem);
     opacity: 0;
@@ -281,6 +313,7 @@
     transition: all 1s;
   }
 
+  /* About Text Container when visible */
   .about__text__container.visible{
     opacity: 1;
     transform: translateX(0);
@@ -291,10 +324,12 @@
     margin-block: 1rem;
   }
 
+  /* Project Items */
   .projects__items{
     border-radius: 1rem;
   }
 
+  /* Project Images */
   .projects__image{
     border-radius: 0.75rem;
   }
