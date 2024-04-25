@@ -22,6 +22,7 @@ html {
   scale: 0;
 }
 
+/* Grainy Noise */
 .noise::before {
   position: fixed;
   top: 0;
@@ -42,6 +43,7 @@ html {
   gap: 0.5rem;
 }
 
+/* Hamburger Lines */
 .hamburger__lines {
   background-color: black;
   width: 40px;
@@ -49,20 +51,24 @@ html {
   transition: all 0.5s;
 }
 
+/* First Hamburger Lines */
 .hamburger__container > .hamburger__lines:nth-child(1).exit {
   transform-origin: left;
   transform: rotate(33deg);
 }
 
+/* Second Hamburger Lines */
 .hamburger__container > .hamburger__lines:nth-child(2).exit {
   transform: scale(0);
 }
 
+/* Third Hamburger Lines */
 .hamburger__container > .hamburger__lines:nth-child(3).exit {
   transform-origin: left;
   transform: rotate(-33deg);
 }
 
+/* Navigation Bar */
 .nav__bar {
   width: 100%;
   position: fixed;
@@ -71,28 +77,32 @@ html {
   box-shadow: 0 1px 5px 0 black;
 }
 
+/* Navigatiojn Container for Mobile */
 .nav__mobile__container {
   flex-basis: 250px;
   display: flex;
   justify-content: space-between;
 }
 
+/* Nav that contains the mobile navigation menu  */
 .nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* Navigation that contains everything */
 .navigation {
   padding: 1rem 2rem;
   backdrop-filter: blur(5rem) saturate(200%);
-  background-color: rgba(255, 255, 255, 0.80);
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   transition: all 0.8s;
   flex-direction: column;
   height: 3vh;
 }
 
+/* Dropdown menu for mobile */
 .navigation.dropdown {
   height: 100vh;
 }
@@ -229,6 +239,7 @@ html {
   letter-spacing: 5px;
 }
 
+/* Hero Text Inline for typing animation */
 .hero__text__inline {
   display: inline-block;
 }
@@ -424,6 +435,7 @@ html {
   transition: all 0.3s;
 }
 
+/* About Button Hover */
 .about__button:hover{
   background-color: rgb(216, 123, 123);
 }
@@ -460,6 +472,7 @@ html {
   transition: all 0.5s;
 }
 
+/* Skills Items when visible */
 .skills__items.visible {
   transform: rotateY(360deg);
 }
@@ -549,11 +562,13 @@ html {
   transition: all 1s;
 }
 
+/* Project Items when visible */
 .projects__items.visible {
   transform: translateY(0);
   opacity: 1;
 }
 
+/* Project Images */
 .projects__image {
   width: 100%;
   max-width: 25rem;
@@ -561,6 +576,7 @@ html {
   border-radius: none;
 }
 
+/* Project Titles */
 .projects__title {
   color: rgb(216, 123, 123);
   font-family: "Nippo-Bold";
@@ -571,6 +587,7 @@ html {
   word-break: break-all;
 }
 
+/* Skills used for projects */
 .projects__program {
   align-self: baseline;
   margin-top: 2rem;
@@ -580,6 +597,7 @@ html {
   font-size: 13px;
 }
 
+/* Project description */
 .projects__text {
   font-family: monospace;
   line-height: 110%;
@@ -587,6 +605,7 @@ html {
   margin: 1.5rem;
 }
 
+/* Border for each of the skills */
 .projects__program--span {
   padding: 2px 5px;
   margin-right: 10px;
@@ -594,6 +613,7 @@ html {
   border: 2px rgb(216, 123, 123) solid;
 }
 
+/* Project Button View */
 .projects__button {
   font-family: "Nippo-Medium";
   border-radius: 5px;
@@ -606,21 +626,12 @@ html {
   transition: all 0.2s;
 }
 
+/* Project Buttom Hover */
 .projects__button:hover {
   color: white;
   background-color: rgb(216, 123, 123);
   box-shadow: 0 0 5px 0 white;
   transform: scale(1.05);
-}
-
-.projects__button--arrow {
-  display: none;
-  color: black;
-}
-
-.projects__button--arrow.active {
-  display: inline-block;
-  color: black;
 }
 
 /* || FOOTER */
@@ -650,6 +661,7 @@ html {
   font-size: 30px;
 }
 
+/* Footer LinkedIn, Email and Github */
 .footer__linkedin,
 .footer__email,
 .footer__github {
@@ -667,6 +679,7 @@ html {
   margin-bottom: 1rem;
 }
 
+/* Footer LinkedIn, Email and Github hover effect */
 .footer__linkedin:hover,
 .footer__email:hover,
 .footer__github:hover {
@@ -696,6 +709,7 @@ html {
   padding-inline: 0.2rem;
 }
 
+/* Footer links hover effect */
 .footer__links--name:hover {
   background-color: black;
   color: white;
