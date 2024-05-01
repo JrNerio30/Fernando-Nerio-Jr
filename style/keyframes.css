@@ -21,23 +21,11 @@
   }
 }
 
-@keyframes arrowsScrollIndicator {
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
 @keyframes slider{
   from{
-    transform: rotate(-50deg);
+    transform: translateX(0) rotate(40deg);
   }
   to{
-    transform: rotate(calc(-360deg * 2));
+    transform: translateX(-100%) rotate(40deg);
   }
 }

@@ -84,7 +84,7 @@ html {
   justify-content: space-between;
 }
 
-/* Nav that contains the mobile navigation menu  */
+/* Nav that contains the mobile navigation menu features  */
 .nav {
   display: flex;
   flex-direction: column;
@@ -203,7 +203,7 @@ html {
 
 /* || HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,32 +262,40 @@ html {
   font-size: 15px;
 }
 
+/* Box__Container */
+.box__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 123, 123);
+}
+
 /* Hero Box */
 .hero__box {
   overflow: hidden;
-  width: 20rem;
-  height: 20rem;
+  width: 70rem;
+  height: 30rem;
   background-color: black;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 10px 30px 5px black;
+  margin-bottom: 5rem;
 }
 
 /* Hero Box Container */
 .hero__box__container {
   display: flex;
-  flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
 }
 
 /* Hero Box Vector */
 .hero__box--vector {
-  overflow: hidden;
   mix-blend-mode: difference;
-  width: 50rem;
-  height: 20px;
+  width: 3rem;
+  height: 45rem;
   background-color: rgb(216, 123, 123);
-  animation: slider 10s cubic-bezier(0.32, 0.86, 0.81, 0.12) 2.8s infinite;
+  animation: slider 0.8s infinite linear;
 }
 
 /* Hero Button */
@@ -336,8 +344,6 @@ html {
   top: 5px;
   left: 78%;
   transform: translateX(-50%);
-  mix-blend-mode: hard-light;
-  mix-blend-mode: difference;
   height: 5px;
   width: 40%;
 }
@@ -348,7 +354,6 @@ html {
   top: 5px;
   left: 99%;
   transform: translateX(-50%);
-  mix-blend-mode: hard-light;
   height: 50%;
   width: 15px;
 }
@@ -369,7 +374,6 @@ html {
   top: 36.5%;
   left: 4.3%;
   transform: translateX(-50%);
-  mix-blend-mode: hard-light;
   height: 60%;
   width: 10px;
 }

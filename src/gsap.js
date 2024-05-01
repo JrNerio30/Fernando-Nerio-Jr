@@ -30,30 +30,14 @@ gsap.fromTo(
   }
 );
 
-// Hero Arrow Button
-gsap.fromTo(
-  ".hero__button",
-  {
-    opacity: 0,
-    y: -20
-  },
-  {
-    y:0,
-    opacity: 1,
-    duration: 1,
-    delay: 3.5
-  }
-);
-
-// Hero Box
 gsap.fromTo(
   ".hero__box",
   {
-    opacity: 0,
+    y: 200,
   },
   {
-    opacity: 1,
-    duration: 1,
-    delay: 2.8,
+    y: 0,
+    duration: 1.5,
+    delay: 2.9, 
   }
-);
+)

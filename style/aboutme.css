@@ -109,7 +109,7 @@ html {
 .navigation {
   padding: 1rem 2rem;
   backdrop-filter: blur(5rem) saturate(200%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 1);
   display: flex;
   transition: all 0.8s;
   flex-direction: column;
