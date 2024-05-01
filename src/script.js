@@ -90,7 +90,7 @@ const toggleCursor = function () {
 
 // Hero Box Container Children (7 li)
 const heroBoxContainer = document.querySelector(".hero__box__container");
-for (i = 1; i <= 7; i++) {
+for (i = 1; i <= 14; i++) {
   const heroBoxItems = document.createElement("li");
 
   heroBoxContainer.appendChild(heroBoxItems);
@@ -190,3 +190,5 @@ const year = new Date().getFullYear();
 const copyright =  `${year} ${"Fernando Nerio Jr"}`;
 
 document.getElementById("copyRightYear").outerHTML = copyright;
+
+// Hero Box Titlt
