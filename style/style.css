@@ -6,6 +6,11 @@
   color: white;
 }
 
+/* || ROOT VARIABLES */
+:root{
+  --main-color:#d87b7b;
+}
+
 /* || BODY BACKGROUND COLOR */
 body,
 html {
@@ -75,6 +80,17 @@ html {
   z-index: 1;
   overflow: hidden;
   box-shadow: 0 1px 5px 0 black;
+  transition: all 0.5s;
+}
+
+/* Navigation Bar Scroll Up */
+.nav__bar.visible{
+  transform: translateY(0);
+}
+
+/* Navigation Bar Scroll Down */
+.nav__bar.hidden{
+  transform: translateY(-150%);
 }
 
 /* Navigatiojn Container for Mobile */
@@ -176,7 +192,7 @@ html {
     rgba(255, 255, 255, 1) 51%,
     rgba(0, 0, 0, 1) 51%
   );
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Preloader Container */
@@ -207,7 +223,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
   flex-wrap: wrap;
 }
 
@@ -267,7 +283,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(216, 123, 123);
+  background: linear-gradient(360deg, rgba(0,0,0,1) 50%, rgba(216,123,123,1) 50%);
 }
 
 /* Hero Box */
@@ -294,7 +310,7 @@ html {
   mix-blend-mode: difference;
   width: 3rem;
   height: 45rem;
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
   animation: slider 0.8s infinite linear;
 }
 
@@ -335,7 +351,7 @@ html {
 /* About Frame */
 .about__photo__container > .about__frame {
   z-index: 1;
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
 }
 
 /* About Frame Child 1*/
@@ -395,7 +411,7 @@ html {
   gap: 1rem;
   flex-basis: 500px;
   mix-blend-mode: difference;
-  color: rgb(216, 123, 123);
+  color: var(--main-color);
   margin: 5rem 2rem 0 2rem;
   transform: translateY(5rem);
   opacity: 0;
@@ -418,7 +434,7 @@ html {
 .about__text--paragraph {
   font-family: monospace;
   font-size: clamp(10px, 15px, 15px);
-  line-height: 120%;
+  line-height: 130%;
   color: white;
 }
 
@@ -441,7 +457,7 @@ html {
 
 /* About Button Hover */
 .about__button:hover{
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
 }
 
 /* About Button Arrow Symbol */
@@ -458,7 +474,7 @@ html {
 /* ||SKILLS */
 .skills {
   padding: 1% 0;
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
 }
 
 /* Skills Container */
@@ -488,7 +504,8 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 7rem;
+  padding-bottom: 5rem;
 }
 
 /* Projects Title Container */
@@ -511,29 +528,9 @@ html {
 /* Project Title */
 .projects__header {
   font-family: "Nippo-Medium";
-  color: rgb(216, 123, 123);
+  letter-spacing: 3px;
+  color: var(--main-color);
   font-size: clamp(2rem, 3vw, 5vw);
-}
-
-/* projects Triangle Left */
-.projects__triangle--left {
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border-bottom: 10px solid transparent;
-  border-top: 10px solid transparent;
-  border-right: 30px solid rgb(216, 123, 123);
-}
-
-/* projects Triangle Right */
-.projects__triangle--right {
-  width: 0;
-  height: 0;
-  background-color: transparent;
-  border-bottom: 10px solid transparent;
-  border-top: 10px solid transparent;
-  transform: rotate(180deg);
-  border-right: 30px solid rgb(216, 123, 123);
 }
 
 /* Projects Container */
@@ -559,7 +556,7 @@ html {
   max-width: 28rem;
   min-height: 33rem;
   background-color: black;
-  box-shadow: 0px 0px 28px -18px rgb(216, 123, 123);
+  box-shadow: 0px 0px 28px -18px var(--main-color);
   border-radius: none;
   transform: translateY(5rem);
   opacity: 0;
@@ -582,7 +579,7 @@ html {
 
 /* Project Titles */
 .projects__title {
-  color: rgb(216, 123, 123);
+  color: var(--main-color);
   font-family: "Nippo-Bold";
   font-size: 1.5rem;
   align-self: baseline;
@@ -614,7 +611,7 @@ html {
   padding: 2px 5px;
   margin-right: 10px;
   background-color: transparent;
-  border: 2px rgb(216, 123, 123) solid;
+  border: 2px var(--main-color) solid;
 }
 
 /* Project Button View */
@@ -633,14 +630,14 @@ html {
 /* Project Buttom Hover */
 .projects__button:hover {
   color: white;
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
   box-shadow: 0 0 5px 0 white;
   transform: scale(1.05);
 }
 
 /* || FOOTER */
 .footer {
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
   min-height: 30vh;
 }
 
