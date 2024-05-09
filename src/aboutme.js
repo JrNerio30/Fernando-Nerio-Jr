@@ -70,6 +70,22 @@ const toggleCursor = function () {
   document.addEventListener("mouseup", toggleCursor);
 };
 
+// Disappearing Navigation Menu When Scroll
+let lastScrollTop = 0;
+let nav = document.getElementById("nav__barID");
+
+window.addEventListener("scroll", function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if( scrollTop > lastScrollTop){
+    nav.classList.add("hidden");
+    nav.classList.remove("visible");
+  }else{
+    nav.classList.add("visible");
+    nav.classList.remove("hidden");
+  }
+   lastScrollTop = scrollTop;
+})
+
 // GSAP
 gsap.to(".about__preloader__bars", 0.5, {
   height: 0,
