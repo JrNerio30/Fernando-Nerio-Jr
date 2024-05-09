@@ -89,6 +89,17 @@ html {
   z-index: 1;
   overflow: hidden;
   box-shadow: 0 1px 5px 0 black;
+  transition: all 0.5s;
+}
+
+/* Navigation Bar Scroll Up */
+.nav__bar.visible{
+  transform: translateY(0);
+}
+
+/* Navigation Bar Scroll Down */
+.nav__bar.hidden{
+  transform: translateY(-150%);
 }
 
 /* Navigation Mobile Container */
@@ -434,6 +445,7 @@ html {
 
   /* Navigation */
   .navigation{
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 3rem;
     flex-direction: row;
     justify-content: space-between;
@@ -542,6 +554,7 @@ html {
 
   /* Navigation */
   .navigation{
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 1rem 3rem;
     flex-direction: row;
     margin-top: 0;

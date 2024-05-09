@@ -178,7 +178,7 @@
   /* Navigation Bar */
   .nav__bar{
     top: 2%;
-    left: 24%;
+    left: 24.8%;
     border-radius: 40px;
     width: clamp(10rem, 50vw, 70vw);
   }

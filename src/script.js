@@ -138,8 +138,8 @@ const hamburgerLines = document.querySelectorAll(".hamburger__lines");
 
   navigationLinks.forEach(function(remove) {
     remove.addEventListener("click", function() {
-      hamburgerLines.forEach(function(noX) {
-        noX.classList.remove("exit")
+      hamburgerLines.forEach(function(noMenu) {
+        noMenu.classList.remove("exit")
       });
     });
   })
@@ -152,6 +152,9 @@ const hamburgerLines = document.querySelectorAll(".hamburger__lines");
   });
 
   navigationLogo.addEventListener("click", function() {
+    hamburgerLines.forEach(function(noMenu) {
+      noMenu.classList.remove("exit")
+    });
     navigation.classList.remove("dropdown");
     navigationContainer.classList.remove("dropdown");
   });
@@ -191,4 +194,18 @@ const copyright =  `${year} ${"Fernando Nerio Jr"}`;
 
 document.getElementById("copyRightYear").outerHTML = copyright;
 
-// Hero Box Titlt
+// Disappearing Navigation Menu When Scroll
+let lastScrollTop = 0;
+let nav = document.getElementById("nav__barID");
+
+window.addEventListener("scroll", function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+  if( scrollTop > lastScrollTop){
+    nav.classList.add("hidden");
+    nav.classList.remove("visible");
+  }else{
+    nav.classList.add("visible");
+    nav.classList.remove("hidden");
+  }
+   lastScrollTop = scrollTop;
+})

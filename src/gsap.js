@@ -5,19 +5,6 @@ gsap.to(".preloader", {
   delay: 2.6,
 });
 
-// Navigation
-gsap.fromTo(
-  ".nav__bar",
-  {
-    y: -200,
-  },
-  {
-    y: 0,
-    duration: 1.5,
-    delay: 2.8,
-  }
-);
-
 // Hero Title
 gsap.fromTo(
   ".hero__title__container",
