@@ -13,6 +13,12 @@ html {
   cursor: none;
 }
 
+/* || ROOT VARIABLES */
+:root{
+  --main-color: #0e0d0d;
+  --lighter-grey-color: #5a5a5a;
+}
+
 /* Cursor Ring */
 .cursor__ring {
   display: none;
@@ -30,7 +36,7 @@ html {
   width: 100vw;
   height: 100vh;
   content: "";
-  opacity: 0.05;
+  opacity: 0.04;
   z-index: 2;
   pointer-events: none;
   background: url(../assets/gif/noise.gif);
@@ -258,7 +264,7 @@ html {
 .about__preloader__bars {
   width: 15vw;
   height: 2000vw;
-  background-color: white;
+  background-color: var(--main-color);
 }
 
 /* || ABOUT */
@@ -291,7 +297,7 @@ html {
   width: 100%;
   max-width: 20rem;
   height: auto;
-  border: 5px rgb(216, 123, 123) solid;
+  border: 5px var(--lighter-grey-color) solid;
   color: white;
 }
 
@@ -311,14 +317,14 @@ html {
 .about__text--header {
   font-family: "Nippo-bold";
   font-size: clamp(1rem, 4rem, 5rem);
-  color: rgb(216, 123, 123);
+  color: var(--lighter-grey-color);
 }
 
 /* About Text Subheader */
 .about__text--subheader {
   font-family: "Nippo-medium";
   font-size: clamp(1rem, 2.5rem, 3.5rem);
-  color: rgb(216, 123, 123);
+  color: var(--lighter-grey-color);
 }
 
 /* About Text Paragraph */
@@ -331,7 +337,7 @@ html {
 
 /* || FOOTER */
 .footer {
-  background-color: rgb(216, 123, 123);
+  background-color: var(--main-color);
   min-height: 30vh;
 }
 
@@ -350,7 +356,7 @@ html {
 
 /* Footer container heading and pragraph */
 .footer__brand--title {
-  color: black;
+  color: white;
   font-family: "Nippo-Medium";
   margin-bottom: 1rem;
   font-size: 30px;
@@ -363,7 +369,7 @@ html {
   display: block;
   gap: 0.3rem;
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: monospace;
   cursor: pointer;
   font-size: 1.2rem;
@@ -383,7 +389,7 @@ html {
 
 /* Footer title "links" */
 .footer__links--title {
-  color: black;
+  color: white;
   font-family: "Nippo-Medium";
   margin-bottom: 1rem;
   font-size: 25px;
@@ -397,7 +403,7 @@ html {
 /* Footer name of the links */
 .footer__links--name {
   text-decoration: underline;
-  color: black;
+  color: white;
   font-family: monospace;
   font-size: 16px;
   transition: all 0.3s;
@@ -406,14 +412,21 @@ html {
 
 /* Footer Links Name Hover Effect */
 .footer__links--name:hover {
-  background-color: black;
+  background-color: var(--lighter-grey-color);
   color: white;
   text-decoration: none;
 }
 
+/* Updated Text */
+.footer__updated{
+  font-family: "Nippo-Regular";
+  margin-bottom: 16px;
+  color: white;
+}
+
 /* Copyright @ 2024 Aloha */
 .copyright {
-  color: black;
+  color: white;
   font-family: "Nippo-Regular";
   display: flex;
   justify-content: center;
