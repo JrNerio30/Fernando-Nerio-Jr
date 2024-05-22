@@ -11,16 +11,6 @@
   }
 }
 
-@keyframes heroslider {
-  from{
-    transform: translateX(5000px);
-    background: white;
-  }
-  to{
-    
-  }
-}
-
 @keyframes slider{
   from{
     transform: translateX(0) rotate(40deg);
