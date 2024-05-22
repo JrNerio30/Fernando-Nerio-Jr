@@ -86,11 +86,12 @@ window.addEventListener("scroll", function() {
    lastScrollTop = scrollTop;
 })
 
+
 // GSAP
 gsap.to(".about__preloader__bars", 0.5, {
   height: 0,
   stagger: {
-    amount: 0.4
+    amount: 0.5
   },
   ease: "power4.inOut",
 });
