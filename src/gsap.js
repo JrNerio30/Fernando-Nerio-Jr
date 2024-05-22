@@ -1,3 +1,4 @@
+
 // Preloader Screen
 gsap.to(".preloader", {
   x: -5000,
@@ -17,6 +18,7 @@ gsap.fromTo(
   }
 );
 
+// Hero Box Animation
 gsap.fromTo(
   ".hero__box",
   {
