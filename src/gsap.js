@@ -1,9 +1,9 @@
 
 // Preloader Screen
 gsap.to(".preloader", {
-  x: -5000,
-  duration: 2,
-  delay: 2.6,
+  x: -5000
+  duration: 3,
+  delay: 3.6,
 });
 
 // Hero Title
@@ -14,7 +14,7 @@ gsap.fromTo(
   },
   { opacity: 1,
     duration: 1,
-    delay: 2.8
+    delay: 3.8
   }
 );
 
@@ -27,6 +27,6 @@ gsap.fromTo(
   {
     y: 0,
     duration: 1.5,
-    delay: 2.9, 
+    delay: 3.9, 
   }
 )
