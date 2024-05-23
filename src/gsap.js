@@ -1,7 +1,7 @@
 
 // Preloader Screen
 gsap.to(".preloader", {
-  x: -5000
+  x: -5000,
   duration: 3,
   delay: 3.6,
 });
