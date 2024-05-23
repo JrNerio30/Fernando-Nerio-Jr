@@ -36,7 +36,7 @@ html {
   width: 100vw;
   height: 100vh;
   content: "";
-  opacity: 0.04;
+  opacity: 0.02;
   z-index: 3;
   pointer-events: none;
   background: url(../assets/gif/noise.gif);
